@@ -22,10 +22,12 @@ h4, h5, h6 {
     *zoom: 1;
 }
 
-body, html {
+body, html, p {
   font-family: "Geometria";
   font-style: normal;
   font-weight: normal;
+  background-color: #000000;
+  color: #fff;
 }
 
 .noscroll {
@@ -42,4 +44,124 @@ a:hover {
   color: #000000;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff00), color-stop(0, #f7e789));
   background-image: linear-gradient(#ffffff00 60%, #f7e789 0); 
+}
+
+.burger-wrapper {
+	position: relative;
+	width: 28px;
+	height: 14px;
+  cursor: pointer;
+}
+
+.burger-1, .burger-2, .burger-3 {
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.burger-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 17px;
+	height: 2px;
+
+	background: #fff;
+	border-radius: 50px;
+}
+
+.burger-2 {
+	position: absolute;
+	top: 6px;
+	left: 0;
+
+	width: 25.5px;
+	height: 2px;
+
+
+	background: #fff;
+	border-radius: 50px;
+}
+
+.burger-3 {
+	position: absolute;
+	top: 12px;
+	left: 0;
+
+	width: 31px;
+	height: 2px;
+
+	background: #fff;
+	border-radius: 50px;
+}
+
+/* MAIN_S01 STYLES*/
+
+/* NAV STYLES */
+.place_container-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.place_container-link p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.place_img-container {
+  position: relative;
+}
+
+.place_img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.place_img-container::after {
+  content: url('../img/nav_images/place_icon.svg');
+  display: block;
+  padding-top: 1px;
+  padding-left: 5px;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
+}
+
+.main_s01-logo-bg {
+  display: block;
+  position: relative;
+}
+
+.main_s01-logo-bg::before {
+  content: url('../img/nav_images/logo_border.svg');
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+
+.main_s01-logo-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_s01-logo-container p {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
 }

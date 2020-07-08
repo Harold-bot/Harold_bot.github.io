@@ -97,9 +97,9 @@ a:hover {
   font-family: Neumann;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 131.8%;
-  letter-spacing: 0.06em;
+  font-size: 40px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
 }
 
 .btn {
@@ -120,6 +120,40 @@ a:hover {
   background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
   box-shadow: 0px 5px 0px #557458;
 }
+
+/* form styles */
+form {
+  background: #FFFFFF;
+  border: 1.5px solid #E2CAA8;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  padding: 25px 40px;
+  color: #090909;
+  width: 360px;
+}
+
+form legend {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+form hr {
+  margin: 0;
+}
+
+.form_socials-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_social {
+  width: 130px!important;
+  padding: 14px 0 12px;
+}
+
 /* MAIN_S01 STYLES*/
 
 /* MAIN_S01 NAV STYLES */
@@ -222,6 +256,13 @@ a:hover {
 }
 
 /* main_s01 info styles*/
+.main_s01-info .section_title {
+  font-size: 48px;
+  line-height: 131.8%;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
 .main_s01-info h4 {
   font-weight: normal;
   font-size: 22px;

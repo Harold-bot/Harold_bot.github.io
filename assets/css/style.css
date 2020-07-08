@@ -36,14 +36,11 @@ body, html, p {
 
 a, a:active, a:visited {
   text-decoration: none;
-  color: #000000;
+  color: #fff;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000000;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff00), color-stop(0, #f7e789));
-  background-image: linear-gradient(#ffffff00 60%, #f7e789 0); 
 }
 
 .burger-wrapper {
@@ -100,7 +97,6 @@ a:hover {
 /* NAV STYLES */
 .place_container-link {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -148,7 +144,7 @@ a:hover {
 .main_s01-logo-bg::before {
   content: url('../img/nav_images/logo_border.svg');
   position: absolute;
-  top: 0;
+  top: -5px;
   left: -5px;
 }
 
@@ -164,4 +160,35 @@ a:hover {
   line-height: 16px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.coop_link {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.number_container {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.number_container-call {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.number_container-call-order {
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
 }

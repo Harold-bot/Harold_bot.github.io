@@ -93,12 +93,36 @@ a:hover {
 }
 
 /* main styles */
+.section_title {
+  font-family: Neumann;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 131.8%;
+  letter-spacing: 0.06em;
+}
 
+.btn {
+  padding: 25px 30px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+}
 
-
+.btn-primary {
+  background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
+  box-shadow: 0px 5px 0px #557458;
+}
 /* MAIN_S01 STYLES*/
 
-/* NAV STYLES */
+/* MAIN_S01 NAV STYLES */
 .place_container-link {
   display: flex;
   align-items: center;
@@ -195,4 +219,33 @@ a:hover {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
+}
+
+/* main_s01 info styles*/
+.main_s01-info h4 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.main_s01-info h4 span {
+  color: #BDA988;
+}
+
+.main_s01-pluces-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_s01-pluce {
+  min-width: 220px;
+  padding: 14px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_s01-pluce p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
 }

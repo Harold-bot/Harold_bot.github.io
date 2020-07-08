@@ -1,0 +1,45 @@
+p, h1, h2, h3,
+h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body, html {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff00), color-stop(0, #f7e789));
+  background-image: linear-gradient(#ffffff00 60%, #f7e789 0); 
+}

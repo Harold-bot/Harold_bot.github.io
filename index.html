@@ -101,40 +101,50 @@
               на ваш дом</h1>
               <form>
                 <fieldset>
-                  <legend>Куда прислать цену?</legend>
+                  <h2 class="form_title">Куда прислать цену?</h2>
                   <hr>
                   <div class="form_socials-container">
-                    <div class="form_social">
+                    <div class="form_social form_social-viber">
                       <input type="radio" name="size" id="size_1" value="small">
                       <label for="size_1">
-                        <img src="" alt="">
+                        <img src="assets/img/form_icons/telegram.svg" alt="">
+                        <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
                         в Viber
                       </label>
                     </div>
-                    <div class="form_social">
-                      <input type="radio" name="size" id="size_1" value="small">
-                      <label for="size_1">
-                        <img src="" alt="">
-                        в Viber
+                    <div class="form_social form_social-telegram">
+                      <input type="radio" name="size" id="size_2" value="small">
+                      <label for="size_2">
+                        <img src="assets/img/form_icons/telegram.svg" alt="">
+                        в Telegram
                       </label>
                     </div>
-                    <div class="form_social">
-                      <input type="radio" name="size" id="size_1" value="small">
-                      <label for="size_1">
-                        <img src="" alt="">
-                        в Viber
+                    <div class="form_social form_social-whatsapp">
+                      <input type="radio" name="size" id="size_3" value="small">
+                      <label for="size_3">
+                        <img src="assets/img/form_icons/whatsapp.svg" alt="">
+                        в Whatsapp
                       </label>
                     </div>
-                    <div class="form_social">
-                      <input type="radio" name="size" id="size_1" value="small">
-                      <label for="size_1">
-                        <img src="" alt="">
-                        в Viber
+                    <div class="form_social form_social-phone">
+                      <input type="radio" name="size" id="size_4" value="small">
+                      <label for="size_4">
+                        <img src="assets/img/form_icons/tel_btn.svg" alt="">
+                        Позвоните мне
                       </label>
                     </div>
                   </div>
-                  <input type="text" type="text">
-                  <button></button>
+                  <div class="form_tel-input-container">
+                    <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                  </div>
+                  <button class="btn btn-primary w-100">узнать цену</button>
+                  <div class=""> 
+                    <label class="form_accept-container">
+                      <input type="checkbox" checked="checked" name="checkbox">
+                      <span class="checkmark"></span>
+                      <p>Согласен с <span>Политикой конфиденциальности</span></p>
+                    </label>
+                  </div>
                 </fieldset>
               </form>  
           </div>

@@ -124,16 +124,21 @@ a:hover {
 /* form styles */
 form {
   background: #FFFFFF;
-  border: 1.5px solid #E2CAA8;
   box-sizing: border-box;
   box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.07);
-  border-radius: 20px;
-  padding: 25px 40px;
   color: #090909;
-  width: 360px;
+  padding: 12px;
+  width: 390px;
+  border-radius: 20px;
 }
 
-form legend {
+form fieldset {
+  border: 1.5px solid #E2CAA8;
+  border-radius: 20px;
+  padding: 25px 40px;
+}
+
+.form_title {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
@@ -141,19 +146,192 @@ form legend {
 
 form hr {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .form_socials-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.form_social {
-  width: 130px!important;
-  padding: 14px 0 12px;
+.form_social input {
+  display: none;
+} 
+
+.form_social label {
+  font-weight: normal;
+  font-size: 12px;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 5px 0;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.5s;
+	transition: ease-in-out 0.5s;
 }
 
+.work_price .form_social label {
+  width: 130px;
+}
+
+.form_social label img {
+  margin-right: 5px;
+}
+
+.form_social-hover-icon {
+  display: none;
+}
+
+.form_social label:hover img {
+  display: none;
+}
+
+.form_social label:hover .form_social-hover-icon {
+  display: inline;
+}
+
+.form_social label:hover {
+  color: #fff;
+}
+
+.form_social-viber label:hover {
+  border: 1px solid #8E24AA;
+  background-color: #8E24AA;
+}
+
+.form_social-telegram label:hover {
+  border: 1px solid #039BE5;
+  background-color: #039BE5;
+}
+
+.form_social-whatsapp label:hover {
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+}
+
+.form_social-phone label:hover {
+  border: 1px solid #E2CAA8;
+  background-color: #E2CAA8;
+}
+
+#tel_input {
+  display: block;
+  margin: auto;
+  background: #F5F5F5;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+  box-sizing: border-box;
+  padding: 15px 30px 15px 65px;
+  border-radius: 1000px;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.105em;
+  color: #5f5e5e;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color :#ABABAB;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #ABABAB;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ABABAB;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #ABABAB;
+}
+
+#tel_input:focus {
+  outline: none;
+}
+
+.form_tel-input-container {
+  position: relative;
+}
+
+.form_tel-input-container::after {
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  content: url(../img/form_icons/tel_input.svg);
+  padding: 4.5px 9.5px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+/* styles for accept input */
+
+.form_accept-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.form_accept-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  display: block;
+  position: relative;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #E5C883;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.form_accept-container:hover input ~ .checkmark {
+  
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form_accept-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form_accept-container .checkmark:after {
+  width: 15px;
+  height: 15px;
+  left: 1px;
+  top: 1px;
+  background-color: #E5C883;
+  border-radius: 50%;
+}
+
+.form_accept-container p span {
+  color: #E5C883;
+  border-bottom: 1px dashed #E5C883;
+}
 /* MAIN_S01 STYLES*/
 
 /* MAIN_S01 NAV STYLES */
@@ -289,4 +467,14 @@ form hr {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
+}
+
+/* work_price STYLES */
+.work_price .btn {
+  padding: 15px 30px 10px;
+  margin-top: ;
+}
+
+.work_price .form_tel-input-container {
+  margin: 26px auto;
 }

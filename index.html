@@ -137,7 +137,7 @@
                   <div class="form_tel-input-container">
                     <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
                   </div>
-                  <button class="btn btn-primary w-100">узнать цену</button>
+                  <button class="btn btn-primary btn_small w-100">узнать цену</button>
                   <div class=""> 
                     <label class="form_accept-container">
                       <input type="checkbox" checked="checked" name="checkbox">
@@ -152,8 +152,88 @@
       </div>
     </section>
 
+    <section class="catalog_brick">
+      <div class="container">
+        <h1 class="section_title">Каталог декаративного камня нашего производста</h1>
+        <div class="catalog_brick-slide-container row">
+          <article class="catalog_brick-slide">
+            <div class="catalog_brick-slide-img-container">
+              <img class="img-fluid w-100" src="assets/img/catalog_icons/1.png" alt="">
+            </div>
+            <div class="catalog_brick-slide-info-container">
+              <h2>Название камня</h2>
+              <p>Краткое описание, рассказ о камне или набор характертистик</p>
+              <h3>25 руб./м2</h3>
+              <a class="btn btn_small" href="">Рассчитать стоимость</a>
+            </div>
+          </article>
+          <article class="catalog_brick-slide">
+            <div class="catalog_brick-slide-img-container">
+              <img class="img-fluid w-100" src="assets/img/catalog_icons/1.png" alt="">
+            </div>
+            <div class="catalog_brick-slide-info-container">
+              <h2>Название камня</h2>
+              <p>Краткое описание, рассказ о камне или набор характертистик</p>
+              <h3>25 руб./м2</h3>
+              <a class="btn btn_small" href="">Рассчитать стоимость</a>
+            </div>
+          </article>
+          <article class="catalog_brick-slide">
+            <div class="catalog_brick-slide-img-container">
+              <img class="img-fluid w-100" src="assets/img/catalog_icons/1.png" alt="">
+            </div>
+            <div class="catalog_brick-slide-info-container">
+              <h2>Название камня</h2>
+              <p>Краткое описание, рассказ о камне или набор характертистик</p>
+              <h3>25 руб./м2</h3>
+              <a class="btn btn_small" href="">Рассчитать стоимость</a>
+            </div>
+          </article>
+          <article class="catalog_brick-slide">
+            <div class="catalog_brick-slide-img-container">
+              <img class="img-fluid w-100" src="assets/img/catalog_icons/1.png" alt="">
+            </div>
+            <div class="catalog_brick-slide-info-container">
+              <h2>Название камня</h2>
+              <p>Краткое описание, рассказ о камне или набор характертистик</p>
+              <h3>25 руб./м2</h3>
+              <a class="btn btn_small" href="">Рассчитать стоимость</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <script src="./vendor/mask/jquery.maskedinput.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+      $('.catalog_brick-slide-container').slick({
+      centerMode: true,
+      centerPadding: '0',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+    </script>
 
   </body>
 </html>

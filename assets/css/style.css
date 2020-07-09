@@ -22,12 +22,15 @@ h4, h5, h6 {
     *zoom: 1;
 }
 
-body, html, p {
+body, html {
+  background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #fff;
   font-family: "Geometria";
   font-style: normal;
   font-weight: normal;
-  background-color: #000000;
-  color: #fff;
 }
 
 .noscroll {
@@ -118,11 +121,17 @@ section {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   color: #fff;
   border: none;
+  background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
 }
 
 .btn-primary {
-  background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
   box-shadow: 0px 5px 0px #557458;
+}
+
+.btn_small {
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /* form styles */
@@ -146,6 +155,7 @@ form fieldset {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
+  color: #090909;
 }
 
 form hr {
@@ -176,7 +186,8 @@ form hr {
   margin: 5px 0;
   cursor: pointer;
   -webkit-transition: ease-in-out 0.5s;
-	transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  color: #090909;
 }
 
 .work_price .form_social label {
@@ -330,6 +341,11 @@ form hr {
   top: 1px;
   background-color: #E5C883;
   border-radius: 50%;
+  position: relative;
+}
+
+.form_accept-container p {
+  color: #090909;
 }
 
 .form_accept-container p span {
@@ -513,4 +529,82 @@ form hr {
 
 .work_price .form_tel-input-container {
   margin: 26px auto;
+}
+
+/* catalog_brcik SECTION STYLES */
+.catalog_brick-slide {
+  border-radius: 8px;
+  background: #3B3A44;
+}
+/* margin between slides */
+.slick-slide {
+  margin: 0 27px;
+}
+
+.catalog_brick-slide-info-container {
+  padding: 20px 30px 25px;
+  color: #fff;
+}
+
+.catalog_brick-slide-info-container h2, .catalog_brick-slide-info-container h3 {
+  font-family: Neumann;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
+
+.catalog_brick-slide-info-container h2 {
+  font-size: 24px;
+}
+
+.catalog_brick-slide-info-container h3 {
+  font-size: 22px;
+  color: #BDA988;
+  margin-bottom: 26px;
+}
+
+.catalog_brick-slide-info-container p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 20px 0;
+}
+
+.catalog_brick-slide-container .btn_small {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+}
+
+.catalog_brick-slide-container .slick-center .btn_small {
+  background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
+  border: none;
+}
+
+/* slick buttons styles */
+.catalog_brick .slick-arrow {
+  width: 66px;
+  height: 66px;
+}
+
+.catalog_brick .slick-arrow:before {
+  display: block;
+  content: url(../img/slider_icons/slick_arrow.svg);
+  padding: 21px 10px;
+  width: 66px;
+  height: 66px;
+  background: linear-gradient(180deg, #E8C99B 0%, #C7A576 100%);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.catalog_brick .slick-next {
+  right: -70px;
+}
+
+.catalog_brick .slick-prev {
+  left: -70px;
+}
+
+.catalog_brick .slick-prev:before {
+  transform: rotate(180deg);
+
 }

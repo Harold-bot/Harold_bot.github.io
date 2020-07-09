@@ -93,6 +93,10 @@ a:hover {
 }
 
 /* main styles */
+section {
+  padding: 81px 0;
+}
+
 .section_title {
   font-family: Neumann;
   font-style: normal;
@@ -333,7 +337,9 @@ form hr {
   border-bottom: 1px dashed #E5C883;
 }
 /* MAIN_S01 STYLES*/
-
+.main_s01 {
+  padding-top: 0;
+}
 /* MAIN_S01 NAV STYLES */
 .place_container-link {
   display: flex;
@@ -470,9 +476,39 @@ form hr {
 }
 
 /* work_price STYLES */
+.work_price {
+  position: relative;
+}
+
+.work_price::before {
+  content: '';
+  width: 860px;
+  height: 582px;
+  
+  border-radius: 50%;
+  opacity: 0.6;
+  border: 2px dashed #E2CAA8;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 860px);
+  top: calc(50% - 582px / 2);
+}
+
+.work_price::after {
+  content: url(../img/work_price/1.png);
+  position: absolute;
+  top: 20px;
+  left: 0em;
+  z-index: 2;
+}
+
+.work_price .section_title {
+  margin-bottom: 59px;
+}
+
 .work_price .btn {
   padding: 15px 30px 10px;
-  margin-top: ;
 }
 
 .work_price .form_tel-input-container {

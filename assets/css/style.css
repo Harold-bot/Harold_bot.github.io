@@ -182,7 +182,7 @@ form hr {
   box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.07);
   border-radius: 7px;
   text-align: center;
-  padding: 12px 0;
+  padding: 12px 9px;
   margin: 5px 0;
   cursor: pointer;
   -webkit-transition: ease-in-out 0.5s;

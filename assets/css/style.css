@@ -196,6 +196,8 @@ form hr {
 
 .form_social label img {
   margin-right: 5px;
+  height: 16px;
+  width: 16px;
 }
 
 .form_social-hover-icon {

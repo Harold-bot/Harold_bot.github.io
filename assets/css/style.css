@@ -724,7 +724,18 @@ form hr {
   margin-top: 30px;
 }
 
+/* take_kp section styles */
+.take_kp {
+  background: url(../img/take_kp/bg.png) center/cover;
+}
 
+.take_kp p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 
 

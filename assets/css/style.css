@@ -353,6 +353,86 @@ form hr {
   color: #E5C883;
   border-bottom: 1px dashed #E5C883;
 }
+
+/* catalog_brick form styles */
+
+.catalog_brick form {
+  background: #2F2E37;
+  padding: 0;
+}
+
+.catalog_brick fieldset {
+  border: none;  
+}
+
+.catalog_brick-light fieldset, .catalog_brick fieldset {
+  padding: 25px 28px 18px;
+}
+
+.catalog_brick .form_title {
+  color: #fff;
+}
+
+.catalog_brick hr {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.catalog_brick .form_social label {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 11px 12px;
+}
+
+.catalog_brick #tel_input {
+  background: #4E4E55;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+  color: #CEC8C8;
+}
+
+.catalog_brick .form_social label, ..catalog_brick-light .form_social label {
+  padding: 11px 12px;
+}
+
+.catalog_brick #tel_input, .catalog_brick-light #tel_input {
+  padding: 18px 10px 18px 45px;
+}
+
+.catalog_brick .form_tel-input-container::after {
+  content: url(../img/form_icons/tel_input-revers.svg);
+  background: rgba(255,255,255,0.2);
+
+}
+
+.catalog_brick .form_tel-input-container::after, .catalog_brick-light .form_tel-input-container::after {
+  left: 10px;
+  top: 13px;
+}
+
+.catalog_brick .btn_small, .catalog_brick-light .btn_small {
+  font-size: 13px;
+}
+
+.catalog_brick .btn_small p, .catalog_brick-light .btn_small p {
+  font-size: 7px;
+}
+
+.catalog_brick .btn_small p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.catalog_brick .checkmark {
+  border-color: rgba(208, 208, 208, 0.36);
+}
+
+.catalog_brick .checkmark::after {
+  background-color: rgba(208, 208, 208, 0.36);
+}
+
+.catalog_brick .form_accept-container p {
+  color: #fff;
+}
+
+
 /* MAIN_S01 STYLES*/
 .main_s01 {
   padding-top: 0;
@@ -609,53 +689,6 @@ form hr {
   transform: rotate(180deg);
 }
 
-.catalog_brick form {
-  background: #2F2E37;
-  padding: 0;
-}
-
-.catalog_brick fieldset {
-  border: none;
-  padding: 25px 28px 18px;
-}
-
-.catalog_brick .form_title {
-  color: #fff;
-}
-
-.catalog_brick hr {
-  border-color: rgba(255,255,255,0.1);
-}
-
-.catalog_brick .form_social label {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  padding: 11px 12px;
-}
-
-
-.catalog_brick #tel_input {
-  background: #4E4E55;
-  border: 1px solid rgba(179, 179, 179, 0.15);
-  color: #CEC8C8;
-  padding: 18px 10px 18px 45px;
-}
-
-.catalog_brick .form_tel-input-container::after {
-  content: url(../img/form_icons/tel_input-revers.svg);
-  background: rgba(255,255,255,0.2);
-  left: 10px;
-  top: 13px;
-}
-
-.catalog_brick .btn_small {
-  font-size: 13px;
-}
-
-.catalog_brick .btn_small p {
-  font-size: 7px;
-  color: rgba(255, 255, 255, 0.7);
-}
 
 
 

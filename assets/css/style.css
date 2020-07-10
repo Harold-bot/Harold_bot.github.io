@@ -389,7 +389,7 @@ form hr {
   color: #CEC8C8;
 }
 
-.catalog_brick .form_social label, ..catalog_brick-light .form_social label {
+.catalog_brick .form_social label, .catalog_brick-light .form_social label {
   padding: 11px 12px;
 }
 
@@ -689,6 +689,40 @@ form hr {
   transform: rotate(180deg);
 }
 
+/* not stone section STYLES */
+.not_stone {
+  background: #fff;
+}
+
+.not_stone .section_title {
+  color: #000;
+  margin-bottom: 88px;
+}
+
+.not_stone .col-lg-4 {
+  margin-bottom: 40px;
+  padding: 0 35px;
+}
+
+.not_stone-container {
+  background: #FBF9F7;
+  border-radius: 15px;
+  padding: 47px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_stone-container p {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-top: 30px;
+}
 
 
 

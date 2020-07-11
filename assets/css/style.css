@@ -664,6 +664,7 @@ form hr {
 .slick-arrow {
   width: 66px;
   height: 66px;
+  cursor: pointer;
 }
 
 .slick-arrow:before {
@@ -687,6 +688,76 @@ form hr {
 
 .slick-prev:before {
   transform: rotate(180deg);
+}
+
+/* reviews STYLES */
+.reviews {
+  background: #fff;
+  padding-bottom: 200px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.reviews_name-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reviews .nav-tabs .nav-link {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid #B9A585;
+  padding: 0;
+  padding-bottom: 15px;
+  opacity: 0.4;
+}
+
+.reviews .nav-tabs .nav-link.active {
+  opacity: 1;
+}
+
+.reviews_name h6 {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.reviews_name p {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.reviews_slider {
+  margin-top: 70px;
+  width: 1450px;
+}
+
+.reviews_slide {
+  border-radius: 15px;
+  padding-right: 42px;
+}
+
+.reviews_slider .slick-prev {
+  top: 320px;
+  left: 0;
+}
+
+.reviews_slider .slick-next {
+  top: 320px;
+  left: 90px;
+}
+
+.reviews_slider .slick-disabled:before {
+  background: #F5F5F5;
+border: 0.5px solid rgba(244, 244, 244, 0.86);
+opacity: 1;
 }
 
 /* not stone section STYLES */

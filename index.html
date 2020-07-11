@@ -381,6 +381,65 @@
       </div>
     </section>
 
+    <section class="reviews">
+      <div class="container">
+        <h1 class="section_title"></h1>
+        <ul class="nav nav-tabs row d-flex justify-content-between align-items-center">
+          <li class="nav-item col-lg-3">
+            <a class="nav-link active reviews_name-container" data-toggle="tab" href="#description">
+              <img src="assets/img/reviews/1/man.png" alt="">
+              <div class="reviews_name">
+                <h6>Максим и Кристина</h6>
+                <p>дом на Дроздах</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-lg-3">
+            <a class="nav-link reviews_name-container" data-toggle="tab" href="#characteristics">
+              <img src="assets/img/reviews/1/man.png" alt="">
+              <div class="reviews_name">
+                <h6>Максим и Кристина</h6>
+                <p>дом на Дроздах</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-lg-3">
+            <a class="nav-link reviews_name-container" data-toggle="tab" href="#opinion">
+              <img src="assets/img/reviews/1/man.png" alt="">
+              <div class="reviews_name">
+                <h6>Максим и Кристина</h6>
+                <p>дом на Дроздах</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="description">
+            <div class="reviews_slider">
+              <div class="reviews_slide">
+                <img class="img-fluid" src="assets/img/footer/slider/1.png" alt="">
+              </div>
+              <div class="reviews_slide">
+                <img class="img-fluid" src="assets/img/footer/slider/1.png" alt="">
+              </div>
+              <div class="reviews_slide">
+                <img class="img-fluid" src="assets/img/footer/slider/1.png" alt="">
+              </div>
+              <div class="reviews_slide">
+                <img class="img-fluid" src="assets/img/footer/slider/1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="characteristics">
+            Характеристики товара...
+          </div>
+          <div class="tab-pane fade" id="opinion">
+            Отзывы...
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="not_stone">
       <div class="container">
         <h1 class="section_title text-center">Дом Камня, это не только велеколепный декоративный камень</h1>
@@ -667,6 +726,14 @@
       $('.footer_slider').slick({
         infinite: false,
         slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    </script>
+
+    <script>
+      $('.reviews_slider').slick({
+        infinite: false,
+        slidesToShow: 3,
         slidesToScroll: 1
       });
     </script>

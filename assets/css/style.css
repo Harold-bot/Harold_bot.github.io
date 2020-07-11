@@ -727,6 +727,13 @@ form hr {
 /* take_kp section styles */
 .take_kp {
   background: url(../img/take_kp/bg.png) center/cover;
+  padding: 115px 0;
+}
+
+.take_kp h5 {
+  margin: 52px 0 70px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .take_kp p {
@@ -737,6 +744,53 @@ form hr {
   color: #FFFFFF;
 }
 
+.take_kp .btn {
+  margin-top: 70px;
+}
+
+/* footer STYLES */
+footer {
+  background: #25252C;
+}
+
+.footer_contact {
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+.footer_contact-container {
+  border: 1px solid rgba(131, 131, 131, 0.21);
+  border-radius: 15px;
+  padding: 17px 20px 10px;
+}
+
+.footer_contact-title-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer_contact-title-container h4 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.footer_contact-text-container {
+  margin-left: 30px;
+}
+ 
+.footer_contact-text-container p {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.footer_contact-text-container p:nth-child(1) {
+  opacity: 1;
+  margin-top: 21px;
+  margin-bottom: 9px;
+}
 
 
 

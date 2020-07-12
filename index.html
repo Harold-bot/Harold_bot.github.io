@@ -461,6 +461,64 @@
       </div> 
     </section>
 
+    <section class="work_stages">
+      <div class="container">
+        <h1 class="section_title">Мы создали лучший сервис и схему работы, для наших клиентов</h1>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="work_stages-container">
+              <div class="work_stages-navs">
+                <ul class="nav nav-tabs d-flex justify-content-between align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#deadlines">Сроки</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#delivery">Доставка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#guarantee">Гарантия</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#service">Обслуживание</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="work_stages-slider">
+                <div class="work_stages-content tab-content">
+                  <div class="tab-pane col-lg-8 fade show active" id="deadlines">
+                    <h3>Гарантия сроков</h3>
+                    <div class="work-stages-content-plus">
+                      <img src="assets/img/work_stages/slide1/money.png" alt="">
+                      <p>По договору за каждый день <br> просрочки выплачиваем пеню</p>
+                    </div>
+                    <div class="work-stages-content-plus">
+                      <img src="assets/img/work_stages/slide1/time.png" alt="">
+                      <p>Работаем в самые сжатые сроки, <br> когда другие не готовы</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-5 work-stages-content-fact">
+                        <h4>Факт 1</h4>
+                        <p>Производственные мощности, 160 м2 в сутки, работаем с любым объемом</p>
+                      </div>
+                      <div class="col-lg-5 offset-lg-1 work-stages-content-fact">
+                        <h4>Факт 2</h4>
+                        <p>Произвели 80м2 для клиента за 12 дней, когда другие заявляли от 30 дней</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="work_stages-content tab-content">
+                  <div class="tab-pane col-lg-8 fade" id="deadlines">
+                    <h1>По договору за каждый день просрочки выплачиваем пеню</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="not_stone">
       <div class="container">
         <h1 class="section_title text-center">Дом Камня, это не только велеколепный декоративный камень</h1>
@@ -755,6 +813,14 @@
       $('.reviews_slider').slick({
         infinite: false,
         slidesToShow: 3,
+        slidesToScroll: 1
+      });
+    </script>
+
+    <script>
+      $('.work_stages-slider').slick({
+        infinite: false,
+        slidesToShow: 1,
         slidesToScroll: 1
       });
     </script>

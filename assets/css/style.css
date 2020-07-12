@@ -760,6 +760,79 @@ border: 0.5px solid rgba(244, 244, 244, 0.86);
 opacity: 1;
 }
 
+/* additional section STYLES */
+.additional {
+  padding-top: 129px;
+  padding-bottom: 109px;
+  background: url(../img/additional/bg.png) center/cover;
+  background-color: rgba(248, 244, 239, 0.5);
+}
+
+.additional h3 {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.additional_container {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 35px 62px 39px;
+  border-radius: 15px;
+  background: linear-gradient(89.09deg, #43424B 0.39%, #2F2E37 98.32%);
+}
+
+.additional_sign-up-container .btn {
+  margin-top: 56px;
+}
+
+.additional_sign-up-container::before {
+  content: url(../img/additional/1.png);
+  position: absolute;
+  right: -113px;
+  bottom: -70px;
+  transform: scale(0.6);
+}
+
+.additional_instagram-container {
+  padding-bottom: 39px;
+}
+
+.additional_instagram-container a {
+  font-family: Neumann;
+  font-weight: normal;
+  display: block;
+  font-size: 35px;
+  color: #D2B68E;
+  margin-top: 32px;
+  margin-bottom: 9px;
+}
+
+.additional_instagram-container span {
+  display: block;
+  width: 73px;
+  height: 1px;
+  background-color: #CECECE;
+}
+
+.additional_instagram-container p {
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin-top: 6px;
+}
+
+.additional_instagram-container::before {
+  content: url(../img/additional/2.png);
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  transform: scale(0.95);
+}
+
 /* not stone section STYLES */
 .not_stone {
   background: #fff;

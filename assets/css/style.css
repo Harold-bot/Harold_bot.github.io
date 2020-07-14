@@ -703,6 +703,53 @@ form hr {
   transform: rotate(180deg);
 }
 
+/* pluces section STYLES */
+.pluces {
+  padding-top: 120px;
+  background: url(../img/pluces/bg.png) center/cover;
+}
+
+.pluce_container {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 41px;
+}
+
+.pluces .section_title {
+  font-size: 38px;
+}
+
+.pluces .section_title span {
+  color: #C7A576;
+}
+
+.pluce_container-text {
+  margin-left: 25px;
+}
+
+.pluce_container-text h6 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 7px;
+}
+
+.pluce_container-text p {
+  font-weight: normal;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.not_pluces-section-title {
+  margin-top: 200px;
+  font-size: 40px;
+}
+
 /* reviews STYLES */
 .reviews {
   background: #fff;
@@ -996,6 +1043,25 @@ opacity: 0.4;
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+}
+
+/* team section STYLES */
+.team {
+  background: white;
+  padding-bottom: 0;
+}
+
+.team .section_title {
+  color: #000;
+}
+
+.team_img-container {
+  position: relative;
+}
+
+.team_plus {
+  position: absolute;
+  bottom: 0;
 }
 
 /* free_consult section STYLES */

@@ -418,6 +418,9 @@ form hr {
 /* MAIN_S01 STYLES*/
 .main_s01 {
   padding-top: 0;
+  background: url(../img/banner_images/bg.png) center/cover;
+  background-color: #E5E5E5;
+  padding-bottom: 165px;
 }
 /* MAIN_S01 NAV STYLES */
 .place_container-link {
@@ -521,29 +524,26 @@ form hr {
 /* main_s01 info styles*/
 .main_s01-info .section_title {
   font-size: 48px;
-  line-height: 131.8%;
   letter-spacing: 0.06em;
   text-align: left;
+  margin-top: 130px;
 }
 
 .main_s01-info h4 {
   font-weight: normal;
   font-size: 22px;
   line-height: 35px;
+  margin: 35px 0;
 }
 
 .main_s01-info h4 span {
   color: #BDA988;
 }
 
-.main_s01-pluces-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main_s01-pluce {
   min-width: 220px;
   padding: 14px 0;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -552,11 +552,17 @@ form hr {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
+  margin-left: 12px;
+}
+
+.main_s01 .btn_container {
+  margin-top: 53px;
 }
 
 /* work_price STYLES */
 .work_price {
   position: relative;
+  background-color: #E5E5E5;
 }
 
 .work_price::before {
@@ -592,6 +598,10 @@ form hr {
 
 .work_price .form_tel-input-container {
   margin: 26px auto;
+}
+/* catalog_brick section STYLES*/
+.catalog_brick {
+  background: url(../img/catalog_icons/bg.png) center/cover;
 }
 
 /* catalog_brcik SECTION STYLES */
@@ -644,6 +654,14 @@ form hr {
 
 .catalog_brick-full {
   padding-top: 200px;
+  position: relative;
+}
+
+.catalog_brick-full::before {
+  content: url(../img/catalog_icons/catalog.png);
+  position: absolute;
+  right: -30%;
+  top: 10%;
 }
 
 .catalog_brick-full .section_title {
@@ -1339,6 +1357,25 @@ opacity: 0.4;
 }
 
 /* catalog_brick-light section STYLES */
+.catalog_brick-light {
+  background: url(../img/catalog_brick-light/bg.png) center/cover;
+  background-color: #fff;
+  position: relative;
+  padding-top: 102px;
+  padding-bottom: 102px;
+}
+
+.catalog_brick-light::before {
+  content: url(../img/catalog_brick-light/1.png);
+  position: absolute;
+  left: 120px;
+  top: 35px;
+}
+
+.catalog_brick-light .section_title {
+  color: #000;
+  margin-bottom: 60px;
+}
 
 /* take_kp section styles */
 .take_kp {

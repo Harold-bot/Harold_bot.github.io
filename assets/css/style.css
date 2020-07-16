@@ -416,7 +416,66 @@ form hr {
   color: #fff;
 }
 
+.popover_pluce-container {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #D9B577;
+  border-radius: 50%;
+  padding: 8px;
+}
 
+.popover_pluce-container p {
+  color: #595242;
+  font-size: 32px;
+  font-weight: normal;
+  width: 53px;
+  height: 53px;
+  background: #D9B577;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.popover-body {
+  padding: 0;
+}
+
+.bs-popover-bottom {
+  margin-top: 1.2rem;
+}
+
+.popover {
+  border-radius: 20px;
+  background: #FFFFFF;
+  max-width: 293px;
+  border: none; 
+}
+
+.popover_content {
+  border-radius: 20px;
+  background: #FFFFFF;
+  position: relative;
+  max-width: 293px;
+  display: none;
+}
+
+.popover_content-text {
+  padding: 48px 25px 28px;
+}
+
+.popover_content-text h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.popover_content-text p {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 15px;
+}
 /* MAIN_S01 STYLES*/
 .main_s01 {
   padding-top: 0;
@@ -565,6 +624,112 @@ form hr {
   margin-top: 60px;
 }
 
+/* brick_types section STYLES */
+.brick_types {
+  background-color: #E5E5E5;
+}
+
+.brick_types .section_title span {
+  color: #BDA988;
+}
+
+.brick_types-help {
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 21px;
+  margin-bottom: 35px;
+}
+
+.brick_types-help span {
+  width: 17px;
+  height: 17px;
+  font-size: 11px;
+  color: #7AA27E;
+  display: inline-flex;
+  justify-content: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.brick_types-btn {
+  padding: 8px 25px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 999px;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.brick_types-btn:hover, .brick_types-btn:focus {
+  background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
+  border: 1px solid #95C09A;
+
+}
+
+.brick_types-btn:hover p, .brick_types-btn:focus p{
+  color: #fff;
+}
+
+.brick_types-btn:hover img, .brick_types-btn:focus img {
+  display: none;
+}
+
+.brick_types-btn:hover .brick_types-img-hover, .brick_types-btn:focus .brick_types-img-hover {
+  display: block;
+}
+
+.brick_types-btn p {
+  color: #000000;
+}
+
+.brick_types-btn img {
+  width: 44px;
+  height: 46px;
+  margin-right: 16px;
+}
+
+.brick_types-img-hover {
+  display: none;
+}
+
+.brick_types-item {
+  margin-top: 150px;
+}
+
+.brick_types-info-container h2 {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #25252B;
+  margin: 40px 0;
+}
+
+.brick_types-info-container p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #25252B;
+}
+
+.brick_types-img-container {
+  position: relative;
+}
+
+.brick_types-img-container::before {
+  content: url(../img/brick_types/icons/brick_types.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -50px;
+}
 /* work_price STYLES */
 .work_price {
   position: relative;
@@ -770,6 +935,10 @@ form hr {
 .show_room-slider-container {
   position: relative;
   margin-top: -400px;
+}
+
+.show_room-slider-container .container {
+  max-width: unset;
 }
 
 .show_room-main-slide {
@@ -1299,6 +1468,8 @@ opacity: 0.4;
 
 .team_img-container {
   position: relative;
+  width: 1425px;
+  margin: 0 auto;
 }
 
 .team_plus {
@@ -1643,6 +1814,10 @@ color: #828286;
     align-items: center;
   }
 
+  .team_img-container {
+    width: 1200px;
+  }
+
   .reviews {
     padding-bottom: 180px;
   }
@@ -1837,6 +2012,10 @@ color: #828286;
     font-size: 12px;
   }
 
+  .catalog_brick .slick-arrow::before {
+    display: none;
+  }
+
   .catalog_brick-full {
     padding-top: 90px;
   }
@@ -1927,6 +2106,10 @@ color: #828286;
     transform: scale(0.65); 
   }
 
+  .team_img-container {
+    width: 992px;
+  }
+
   .free_consult::after {
     left: 50px;
   }
@@ -1991,11 +2174,177 @@ color: #828286;
 
 
 @media screen and (max-width: 992px) {
+  section {
+    padding: 50px 0;
+  }
+
+  .number_container {
+    justify-content: end;
+  }
+
+  .main_s01-info .section_title {
+    margin-top: 50px;
+  }
+
+  .main_s01-info h4 {
+    line-height: unset;
+  }
+
+  .main_s01-pluce {
+    justify-content: start;
+    padding: 16px 0;
+  }
+
+  .brick_types br {
+    display: none;
+  }
+
+  .brick_types-item {
+    margin-top: 90px;
+    text-align: center;
+  }
+
+  .brick_types-info-container h2 {
+    margin: 30px 0 15px;
+  }
+
+  .brick_types-info-container img {
+    display: none;
+  }
+
+  .brick_types-img-container {
+    margin-top: 70px;
+  }
+
+  .catalog_brick-slide-info-container {
+    padding: 10px 20px 15px;
+  }
+
+  .form_social label {
+    width: 130px;
+    padding: 12px 9px!important;
+  }
+
+  .catalog_brick #tel_input, .catalog_brick-light #tel_input {
+    padding: 15px 30px 15px 65px;
+  }
+
+  .catalog_brick .form_tel-input-container::after, .catalog_brick-light .form_tel-input-container::after {
+    top: 10px;
+  }
+
+  form .btn {
+    padding: 15px 30px 10px!important;
+  }
+
+  .form_tel-input-container {
+    margin: 20px 0;
+  }
+
+  .show_room-slider-container .container {
+    max-width: 720px;
+  }
+
+  .reviews_slider .slick-prev, .reviews_slider .slick-next {
+    top: 150px;
+  }
+
+  #deadlines::before {
+    content: '';
+  }
+
+  .work_stages-navs {
+    padding: 30px 45px;
+  }
+
+  .work_stages-slider {
+    padding: 30px 0;
+  }
+
+  .work_stages-content h3 {
+    font-size: 32px;
+  }
+
+  .work-stages-content-fact {
+    margin-top: 30px;
+  }
+
+  .reviews_slider .slick-next {
+    left: 70px;
+  }
+
+  .reviews_slider .slick-arrow::before {
+    transform: scale(0.8);
+  }
+
+  .team_img-container {
+    width: 768px;
+  }
+
+  .team_plus {
+    width: 70px;
+    height: 70px;
+  }
+
+  .free_consult::after {
+    content: '';
+  }
+
+  .free_consult {
+    background: rgba(53, 53, 62, 0.98);
+  }
+
+  .catalog_brick-light .btn_small {
+    margin-top: 0;
+  }
+
+  .take_kp br {
+    display: none;
+  }
+
+  .footer_contact {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .footer_map {
+    margin-top: 30px;
+  }
+
+  .footer_slider {
+    margin-top: 30px;
+  }
+
+  .footer_slide-img-container img {
+    margin: 0 auto;
+  }
+
+  .footer_slider .slick-next, .footer_slider .slick-prev {
+    top: 310px;
+  }
+
+  .footer_slider .slick-prev {
+    left: 85%;
+  }
+
+  .footer_bot p span {
+    margin-left: 0;
+  }
 
 }
 
 @media screen and (max-width: 767px) {
+  .catalog_brick-light::before, .catalog_brick-full::before, .work_price::after {
+    display: none;
+  }
 
+  .catalog_brick {
+    overflow: hidden;
+  }
+
+  .team {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {

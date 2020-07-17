@@ -1710,6 +1710,170 @@ color: #828286;
   margin-left: 50px;
 }
 
+/* MODAL STYLES */
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 64px 72px;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal_consultant-container  .modal-body::before {
+  content: '';
+  position: absolute;
+  width: 648px;
+  height: 648px;
+  background: linear-gradient(226.74deg, #43424B 37.23%, #63626D 83.74%);
+  border-radius: 50%;
+  bottom: -27%;
+  left: -27%;
+}
+
+.modal_consultant-container {
+  position: relative;
+}
+
+.modal_consultant {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  z-index: 2;
+}
+
+.modal_book-container .modal-body::before {
+  content: '';
+  position: absolute;
+  width: 648px;
+  height: 648px;
+  background: linear-gradient(226.74deg, #43424B 37.23%, #63626D 83.74%);
+  border-radius: 50%;
+  top: -27%;
+  right: -27%;
+}
+
+.modal_book-container {
+  position: relative;
+}
+
+.modal_book {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  right: -10%;
+  top: 2%;
+}
+
+.modal_book::before {
+  content: url(../img/modals/books/download_pdf.png);
+  position: absolute;
+  z-index: 3;
+}
+
+.modal .close span {
+  color: #fff;
+  width: 61px;
+  height: 61px;
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 22px;
+  text-shadow: none;
+}
+
+.modal .close {
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 9;
+}
+
+.modal .close:hover, .close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover, .modal .close {
+  opacity: 1;
+}
+
+.modal .close:hover span {
+  transition: 1s;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+}
+
+.modal_title {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.modal_pluce-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.modal_pluce-container p {
+  font-size: 14px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.modal .form_social label {
+  width: 130px;
+}
+
+.modal_pluce-container p span {
+  font-weight: bold;
+}
+
+.modal .form_tel-input-container {
+  margin: 20px 0;
+}
+
+.modal_pluces-border {
+  padding: 44px 33px 44px 10px;
+  position: relative;
+}
+
+.modal_pluces-border::before {
+  content: '';
+  width: 499px;
+  height: 240px;
+  opacity: 0.1;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: absolute;
+  left: -24%;
+  top: 0;
+}
+
+.modal_pluces-border h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 44px;
+}
+
+.modal_pluces-border p {
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+}
+
 /* media STYLES */
 @media screen and (max-width: 1830px) {
   .work_price::after, .catalog_brick-light::before, .work_price::before {
@@ -2394,4 +2558,10 @@ color: #828286;
 
 @media screen and (max-width: 375px) {
 
+}
+
+@media (min-width: 1200px){
+  .modal-lg, .modal-xl {
+      max-width: 965px;
+  }
 }

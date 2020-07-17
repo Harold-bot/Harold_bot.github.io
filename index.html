@@ -53,7 +53,7 @@
             <div class="number_container justify-content-end">
               <div class="number_container-tel">
                 <a class="number_container-call" href="">+375 44 530-10-10</a>
-                <a class="number_container-call-order" href="">Заказать обратный звонок</a>
+                <a class="number_container-call-order" data-toggle="modal" data-target="#consult1">Заказать обратный звонок</a>
               </div>
               <div class="d-lg-flex d-none justify-content-start number_container-socials">
                 <a href="">
@@ -95,7 +95,7 @@
               </div>
             </div>
             <div class="btn_container">
-              <a class="btn btn-primary" href="">Получить каталог с ценами</a>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#catalog1">Получить каталог с ценами</a>
               <img class="ml-5" src="assets/img/nav_images/garanty.png" alt="">
             </div>
           </div>
@@ -500,7 +500,7 @@
             </div>
             <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3">
               <div class="btn_border">
-                <a class="btn" href="">Укажите время вашего 
+                <a class="btn"  data-toggle="modal" data-target="#consult2">Укажите время вашего 
                   визита в шоурум</a>
                   <p class="ml-4">что бы мы приготовились к вашему приходу</p>
               </div>
@@ -979,7 +979,7 @@
             <p>Финансовая гарантия <br> сроков</p>
           </div>
         </div>
-        <a href="" class="btn btn-primary mx-auto">получить индивидуальное КП</a>
+        <a href="" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#catalog1">получить индивидуальное КП</a>
       </div>
     </section>
 
@@ -1095,6 +1095,259 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODALS -->
+
+    <!-- MODALS FOR CATALOG -->
+    <div class="modal fade bd-example-modal-lg" id="catalog1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-content modal_book-container">
+          <a class="modal_book" href="">
+            <img src="assets/img/modals/books/1.png" alt="">
+          </a>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2 class="modal_title">Получите доступ <br> к каталогу декоративного камня</h2>
+                  <div class="modal_pluce-container">
+                    <img class="mr-3" src="assets/img/pluces/3.png" alt="">
+                    <p>34 коллекции камня со всеми вариантами фактур и цветов,<span> подробными характеристиками и ценой за м2</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <form>
+                    <fieldset>
+                      <h2 class="form_title">Куда прислать цену?</h2>
+                      <hr>
+                      <div class="form_socials-container">
+                        <div class="form_social form_social-viber">
+                          <input type="radio" name="size" id="size_1" value="small">
+                          <label for="size_1">
+                            <img src="assets/img/form_icons/viber_reverse.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
+                            в Viber
+                          </label>
+                        </div>
+                        <div class="form_social form_social-telegram">
+                          <input type="radio" name="size" id="size_2" value="small">
+                          <label for="size_2">
+                            <img src="assets/img/form_icons/telegram.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
+                            в Telegram
+                          </label>
+                        </div>
+                        <div class="form_social form_social-whatsapp">
+                          <input type="radio" name="size" id="size_3" value="small">
+                          <label for="size_3">
+                            <img src="assets/img/form_icons/whatsapp.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
+                            в Whatsapp
+                          </label>
+                        </div>
+                        <div class="form_social form_social-phone">
+                          <input type="radio" name="size" id="size_4" value="small">
+                          <label for="size_4">
+                            <img src="assets/img/form_icons/tel_btn.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
+                            Позвоните мне
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form_tel-input-container">
+                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                      </div>
+                      <button class="btn btn-primary btn_small w-100">узнать цену</button>
+                      <div class=""> 
+                        <label class="form_accept-container">
+                          <input type="checkbox" checked="checked" name="checkbox">
+                          <span class="checkmark"></span>
+                          <p>Согласен с <span>Политикой конфиденциальности</span></p>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </form>  
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                  <div class="modal_pluces-border">
+                    <h4>Дополнительно Вы получите:</h4>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <img src="assets/img/modals/icons/percent.svg" alt="">
+                        <p>Персональная скидка 10% на все позиции в каталоге</p>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="assets/img/modals/icons/book.svg" alt="">
+                        <p>Каталог реализованных объектов с подробным описанием</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODALS FOR CONSULT -->
+    <div class="modal fade bd-example-modal-lg" id="consult1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-content modal_consultant-container">
+          <div class="modal_consultant">
+            <img src="assets/img/consultation/elena.png" alt="">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <h2 class="modal_title">Получите консультацию специалиста</h2>
+                  <div class="modal_pluce-container">
+                    <p>Он ответит на все ваши вопросы и подскажет, какой камень выбрать в рамках вашего бюджета</p>
+                  </div>
+                  <form>
+                    <fieldset>
+                      <h2 class="form_title">Куда прислать цену?</h2>
+                      <hr>
+                      <div class="form_socials-container">
+                        <div class="form_social form_social-viber">
+                          <input type="radio" name="size" id="size_1" value="small">
+                          <label for="size_1">
+                            <img src="assets/img/form_icons/viber_reverse.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
+                            в Viber
+                          </label>
+                        </div>
+                        <div class="form_social form_social-telegram">
+                          <input type="radio" name="size" id="size_2" value="small">
+                          <label for="size_2">
+                            <img src="assets/img/form_icons/telegram.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
+                            в Telegram
+                          </label>
+                        </div>
+                        <div class="form_social form_social-whatsapp">
+                          <input type="radio" name="size" id="size_3" value="small">
+                          <label for="size_3">
+                            <img src="assets/img/form_icons/whatsapp.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
+                            в Whatsapp
+                          </label>
+                        </div>
+                        <div class="form_social form_social-phone">
+                          <input type="radio" name="size" id="size_4" value="small">
+                          <label for="size_4">
+                            <img src="assets/img/form_icons/tel_btn.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
+                            Позвоните мне
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form_tel-input-container">
+                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                      </div>
+                      <button class="btn btn-primary btn_small w-100">узнать цену</button>
+                      <div class=""> 
+                        <label class="form_accept-container">
+                          <input type="checkbox" checked="checked" name="checkbox">
+                          <span class="checkmark"></span>
+                          <p>Согласен с <span>Политикой конфиденциальности</span></p>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSULT MODAL WITH TIME CHOISE -->
+    <div class="modal fade bd-example-modal-lg" id="consult2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-content modal_consultant-container">
+          <div class="modal_consultant">
+            <img src="assets/img/consultation/elena.png" alt="">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <h2 class="modal_title">Оставьте ваш телефон</h2>
+                  <div class="modal_pluce-container">
+                    <p>Наш консультант перезвонит в удобное для Вас время и ответит на все интересующие вопросы</p>
+                  </div>
+                  <form>
+                    <fieldset>
+                      <h2 class="form_title">Оставьте телефон для связи</h2>
+                      <hr>
+                      <div class="form_socials-container">
+                        <div class="form_social form_social-viber">
+                          <input type="radio" name="size" id="size_1" value="small">
+                          <label for="size_1">
+                            <img src="assets/img/form_icons/viber_reverse.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
+                            в Viber
+                          </label>
+                        </div>
+                        <div class="form_social form_social-telegram">
+                          <input type="radio" name="size" id="size_2" value="small">
+                          <label for="size_2">
+                            <img src="assets/img/form_icons/telegram.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
+                            в Telegram
+                          </label>
+                        </div>
+                        <div class="form_social form_social-whatsapp">
+                          <input type="radio" name="size" id="size_3" value="small">
+                          <label for="size_3">
+                            <img src="assets/img/form_icons/whatsapp.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
+                            в Whatsapp
+                          </label>
+                        </div>
+                        <div class="form_social form_social-phone">
+                          <input type="radio" name="size" id="size_4" value="small">
+                          <label for="size_4">
+                            <img src="assets/img/form_icons/tel_btn.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
+                            Позвоните мне
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form_tel-input-container">
+                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                      </div>
+                      <button class="btn btn-primary btn_small w-100">узнать цену</button>
+                      <div class=""> 
+                        <label class="form_accept-container">
+                          <input type="checkbox" checked="checked" name="checkbox">
+                          <span class="checkmark"></span>
+                          <p>Согласен с <span>Политикой конфиденциальности</span></p>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

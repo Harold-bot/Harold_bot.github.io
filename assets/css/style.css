@@ -1716,6 +1716,10 @@ color: #828286;
   border: none;
 }
 
+.modal .btn-primary {
+  box-shadow: none;
+}
+
 .modal-body {
   background: #FFFFFF;
   border-radius: 20px;
@@ -1874,6 +1878,44 @@ color: #828286;
   color: #000000;
 }
 
+.modal .time_choise .form_accept-container {
+  display: inline-flex;
+  justify-content: start;
+  margin-right: 10px;
+}
+
+.modal .time_choise .form_accept-container p {
+  margin-left: 6px;
+}
+
+.time_choise-input {
+  display: none;
+  margin-bottom: 20px;
+  -webkit-transition:all ease-in-out 0.5s;
+  transition: all 2s linear;
+}
+
+
+#time_choised:checked .time_choise-input {
+  display: block;
+}
+
+.time_choise .form_accept-container {
+  padding-top: 0;
+}
+
+.time_choise {
+  margin-bottom: 20px;
+}
+
+.time_choise .form_accept-container {
+  margin-bottom: 0;
+}
+
+.time_choise-input #tel_input {
+  padding: 15px 27px 14px;
+  font-size: 12px;
+}
 /* media STYLES */
 @media screen and (max-width: 1830px) {
   .work_price::after, .catalog_brick-light::before, .work_price::before {

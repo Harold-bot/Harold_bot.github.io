@@ -1331,6 +1331,21 @@
                       <div class="form_tel-input-container">
                         <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
                       </div>
+                      <div class="time_choise"> 
+                        <label class="form_accept-container">
+                          <input onchange="document.getElementById('time_choise-input').style.display = 'none'" type="radio" checked="checked" name="time">
+                          <span class="checkmark"></span>
+                          <p>Перезвоните мне сейчас</span></p>
+                        </label>
+                        <label class="form_accept-container">
+                          <input onchange="document.getElementById('time_choise-input').style.display = 'block'" type="radio" id="time_choised" name="time">
+                          <span class="checkmark"></span>
+                          <p>Ко времени</span></p>
+                        </label>
+                      </div>
+                      <div id="time_choise-input" class="time_choise-input">
+                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="Когда Вам удобнее позвонить?">
+                      </div>
                       <button class="btn btn-primary btn_small w-100">узнать цену</button>
                       <div class=""> 
                         <label class="form_accept-container">

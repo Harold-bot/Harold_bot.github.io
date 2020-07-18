@@ -353,6 +353,10 @@ form hr {
   padding: 25px 28px 18px;
 }
 
+.catalog_brick-light form, .catalog_brick form {
+  width: 100%;
+}
+
 .catalog_brick .form_title {
   color: #fff;
 }
@@ -1061,6 +1065,7 @@ color: #FFFFFF;
 
 .event__img {
   position: relative;
+  width: 50%;
 }
 
 .event__img:hover > .overlay {
@@ -1916,6 +1921,161 @@ color: #828286;
   padding: 15px 27px 14px;
   font-size: 12px;
 }
+
+.modal_case-title {
+  font-weight: 500;
+font-size: 18px;
+color: #C7A576;
+}
+
+.modal_case-title + .modal_title {
+  margin-top: 25px;
+  margin-bottom: 52px;
+}
+
+.questions_card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 27px 12px;
+  cursor: pointer;
+}
+
+.questions_card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions_card h6 {
+  color: #000000;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.questions_card-text {
+  display: none;
+  margin-top: 25px;
+}
+
+.questions_card-text p {
+  color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.material_container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.material_container img {
+  border-radius: 4px;
+  width: 102px;
+  height: 102px;
+}
+
+.material_info {
+  margin-left: 33px;
+}
+
+.material_info h5 {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.material_info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material_info-container h6 {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 10px 20px;
+  letter-spacing: 0.03em;
+  color: #BDA988;
+  border: 1px solid rgba(59, 59, 65, 0.18);
+  border-radius: 100px;
+}
+
+.material_container p {
+  font-weight: normal;
+  font-size: 13px;
+  color: #000000;
+  opacity: 0.4;
+  margin-left: 18px;
+}
+
+.question_price {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question_price span {
+  height: 55px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.question_price-container p {
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.question_price-container h4 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #2A2A32; 
+}
+
+.modal_slider {
+  width: 80%;
+  margin-left: auto;
+  position: relative;
+}
+
+.modal_slider .slick-arrow {
+  z-index: 9;
+}
+
+.modal_slider .slick-arrow::before {
+  width: 50px;
+  height: 50px;
+  padding: 12px 10px;
+}
+
+.modal_main-slide img {
+  border-radius: 15px;
+}
+
+.modal_cases-slides {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.modal_cases-slides img {
+  border: 1px solid #969696;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.modal_cases-slides .slick-current img {
+  box-shadow: 0px 4px 8px #C7A576;
+}
+
 /* media STYLES */
 @media screen and (max-width: 1830px) {
   .work_price::after, .catalog_brick-light::before, .work_price::before {
@@ -2013,6 +2173,7 @@ color: #828286;
   .event__card_title {
     font-size: 28px;
   }
+
 
   .events_pluce-container  {
     display: flex;
@@ -2580,6 +2741,11 @@ color: #828286;
   .work-stages-content-fact {
     margin-top: 15px;
   }
+
+  .event__img {
+    position: relative;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -2603,7 +2769,7 @@ color: #828286;
 }
 
 @media (min-width: 1200px){
-  .modal-lg, .modal-xl {
+  .modal-lg {
       max-width: 965px;
   }
 }

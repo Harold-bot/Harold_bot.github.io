@@ -563,7 +563,7 @@
     </section>
 
     <section class="events d-flex flex-wrap justify-content-between">
-      <div class="w-100 w-sm-50 event__img">
+      <div class="event__img">
         <img src="./assets/img/aaaaa/back-4.png" alt="" class="w-100 w-sm-100">
         <div class="overlay"></div>
         <div class="row events-text-block">
@@ -571,11 +571,11 @@
             <h4 class="event__card_title">Фасад здания БелРеконструкции на Кальварийской</h4>
           </div>
           <div class="col-3 events_pluce-container text-right">
-            <a href="" class="btn_plus my-auto">+</a>
+            <a class="btn_plus my-auto" data-toggle="modal" data-target="#case1">+</a>
           </div>
         </div>
       </div>
-      <div class="w-100 w-sm-50 event__img">
+      <div class="event__img">
         <img src="./assets/img/aaaaa/back-2.png" alt="" class="w-100 w-sm-100">
         <div class="overlay"></div>
         <div class="row events-text-block">
@@ -587,7 +587,7 @@
           </div>
         </div>
       </div>
-      <div class="w-100 w-sm-50 event__img">
+      <div class="event__img">
         <img src="./assets/img/aaaaa/back-3.png" alt="" class="w-100 w-sm-100">
         <div class="overlay"></div>
         <div class="row events-text-block">
@@ -599,7 +599,7 @@
           </div>
         </div>
       </div>
-      <div class="w-100 w-sm-50 event__img">
+      <div class="event__img">
         <img src="./assets/img/aaaaa/back-4.png" alt="" class="w-100 w-sm-100">
         <div class="overlay"></div>
         <div class="row events-text-block">
@@ -1364,6 +1364,91 @@
       </div>
     </div>
 
+    <!-- CASE MODAL -->
+    <div class="modal fade bd-example-modal-lg" id="case1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-centered" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <h4 class="modal_case-title">Наши работы</h4>
+                  <h2 class="modal_title">Фасад здания БелРеконструкции на Кальварийской</h2>
+                  <div class="questions_card">
+                    <div class="questions_card-container">
+                      <h6>Задача</h6>
+                      <img class="questions_card-img" src="assets/img/modals/icons/arrow.svg">
+                    </div>
+                    <div class="questions_card-text">
+                      <p>Директору крупной строительной компании в переговорку и в личный кабинет нужен был необычный камень для вау-эффекта на клиентов и цельнолитой стол из бетона сложной геометрии. Предложили свой камень и сделали стол, который никто не взялся делать.</p>
+                    </div>
+                  </div>
+                  <div class="questions_card">
+                    <div class="questions_card-container">
+                      <h6>Материалы</h6>
+                      <img class="questions_card-img" src="assets/img/modals/icons/arrow.svg">
+                    </div>
+                    <div class="questions_card-text">
+                      <div class="material_container">
+                        <img src="assets/img/materials/1.png  " alt="">
+                        <div class="material_info">
+                          <h5>Камень Антик Брик</h5>
+                          <div class="material_info-container">
+                            <h6>25 руб./м2</h6>
+                            <p>Цвет — 552</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions_card">
+                    <div class="questions_card-container">
+                      <h6>Стоимость и срок</h6>
+                      <img class="questions_card-img" src="assets/img/modals/icons/arrow.svg">
+                    </div>
+                    <div class="questions_card-text">
+                      <div class="question_price">
+                        <div class="question_price-container">
+                          <p>Стоимость:</p>
+                          <h4>150 000 руб.</h4>
+                        </div>
+                        <span></span>
+                        <div class="question_price-container">
+                          <p>Стори:</p>
+                          <h4>2 недели</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="modal_slider">
+                    <div class="modal_main-slide">
+                      <img src="assets/img/show_room/slider_img/bg.png" alt="">
+                      <img src="assets/img/show_room/slider_img/1.png" alt="">
+                      <img src="assets/img/show_room/slider_img/2.png" alt="">
+                      <img src="assets/img/show_room/slider_img/3.png" alt="">
+                      <img src="assets/img/show_room/slider_img/4.png" alt="">
+                    </div>
+                    <div class="modal_cases-slides">
+                      <img src="assets/img/show_room/slider_img/bg.png" alt="">
+                      <img src="assets/img/show_room/slider_img/1.png" alt="">
+                      <img src="assets/img/show_room/slider_img/2.png" alt="">
+                      <img src="assets/img/show_room/slider_img/3.png" alt="">
+                      <img src="assets/img/show_room/slider_img/4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src='vendor/slick/slick.js'></script>
@@ -1500,6 +1585,26 @@
           return $('#popover_content').html();
         }
 });
+    </script>
+
+    <script>
+       $('.modal_main-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        adaptiveHeight: true,
+        fade: true,
+        asNavFor: '.modal_cases-slides'
+      });
+      $('.modal_cases-slides').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.modal_main-slide',
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
     </script>
 
   </body>

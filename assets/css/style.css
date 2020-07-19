@@ -100,7 +100,7 @@ section {
   text-transform: uppercase;
   border-radius: 100px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-  color: #fff;
+  color: #fff!important;
   border: none;
   background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
 }
@@ -113,6 +113,10 @@ section {
   padding: 15px 30px;
   font-weight: 500;
   font-size: 14px;
+}
+
+button:focus {
+  outline: none;
 }
 
 /* form styles */
@@ -157,6 +161,7 @@ form hr {
   display: none;
 } 
 
+
 .form_social label {
   font-weight: normal;
   font-size: 12px;
@@ -187,36 +192,51 @@ form hr {
   display: none;
 }
 
-.form_social label:hover img {
+.form_social label:hover img, .form_social input:checked + label img {
   display: none;
 }
 
-.form_social label:hover .form_social-hover-icon {
+.form_social label:hover .form_social-hover-icon, .form_social input:checked + label .form_social-hover-icon {
   display: inline;
 }
 
-.form_social label:hover {
+.form_social label:hover, .form_social input:checked + label {
   color: #fff;
 }
 
-.form_social-viber label:hover {
-  border: 1px solid #8E24AA;
-  background-color: #8E24AA;
+.form_social-viber label:hover, .form_social-viber label:active, .form_social-viber label:focus, .form_social-viber input:checked + label {
+  border: 1px solid #8E24AA!important;
+  background-color: #8E24AA!important;
 }
 
-.form_social-telegram label:hover {
-  border: 1px solid #039BE5;
-  background-color: #039BE5;
+.form_social-telegram label:hover, .form_social-telegram label:active, .form_social-telegram label:focus, .form_social-telegram input:checked + label {
+  border: 1px solid #039BE5!important;
+  background-color: #039BE5!important;
 }
 
-.form_social-whatsapp label:hover {
-  border: 1px solid #4CAF50;
-  background-color: #4CAF50;
+.form_social-whatsapp label:hover, .form_social-whatsapp label:active, .form_social-whatsapp label:focus, .form_social-whatsapp input:checked + label {
+  border: 1px solid #4CAF50!important;
+  background-color: #4CAF50!important;
 }
 
-.form_social-phone label:hover {
-  border: 1px solid #E2CAA8;
-  background-color: #E2CAA8;
+.form_social-phone label:hover, .form_social-phone label:active, .form_social-phone label:focus, .form_social-phone input:checked + label {
+  border: 1px solid #E2CAA8!important;
+  background-color: #E2CAA8!important;
+}
+
+.form_socials-choised {
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.form_socials-choised p {
+  font-size: 12px;
+  color: #83929A;
+}
+
+.form_socials-choised p span {
+  color: #E5C883;
+  font-size: 13px;
 }
 
 #tel_input {
@@ -246,8 +266,11 @@ form hr {
   color: #ABABAB;
 }
 
-#tel_input:focus {
+#tel_input:focus, #tel_input:active {
   outline: none;
+  border: 1px solid #E2CAA8;
+  background: #f5f3f2;
+  border-radius: 100px;
 }
 
 .form_tel-input-container {
@@ -584,6 +607,7 @@ form hr {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
+  color: #fff!important;
 }
 
 /* main_s01 info styles*/
@@ -631,6 +655,10 @@ form hr {
 /* brick_types section STYLES */
 .brick_types {
   background-color: #E5E5E5;
+}
+
+.brick_types .section_title {
+  color: #25252B;
 }
 
 .brick_types .section_title span {
@@ -1249,6 +1277,8 @@ color: #FFFFFF;
   color: #D2B68E;
   margin-top: 32px;
   margin-bottom: 9px;
+  position: relative;
+  z-index: 9;
 }
 
 .additional_instagram-container span {
@@ -2762,6 +2792,59 @@ color: #C7A576;
   form {
     width: auto;
   } 
+
+  .section_title, .main_s01-info .section_title, .catalog_brick .section_title, .pluces .section_title, .modal_case-title + .modal_title {
+    font-size: 28px;
+  }
+
+  .main_s01-info h4 {
+    font-size: 16px;
+  }
+
+  .brick_types-info-container h2 {
+    font-size: 26px;
+  }
+
+  .show_room .section_title br {
+    display: none;
+  }
+
+  .additional_container {
+    padding: 20px 15px;
+    padding-left: 25px;
+  }
+
+  .additional h3 {
+    font-size: 20px;
+  }
+
+  .additional_sign-up-container .btn {
+    padding: 18px 18px 16px;
+  }
+
+  .additional_instagram-container a {
+    font-size: 22px;
+  }
+
+  .additional_instagram-container p {
+    font-size: 16px;
+  }
+
+  .additional_container::before {
+    content: '';
+  }
+
+  .footer_contact-container {
+    padding: 10px 12px 5px;
+  }
+
+  .footer_contact-title-container h4 {
+    font-size: 14px;
+  }
+
+  .footer_slider .slick-next, .footer_slider .slick-prev {
+    top: 265px;
+  }
 }
 
 @media screen and (max-width: 375px) {

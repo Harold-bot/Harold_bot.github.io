@@ -96,7 +96,7 @@
             </div>
             <div class="btn_container">
               <a class="btn btn-primary" data-toggle="modal" data-target="#catalog1">Получить каталог с ценами</a>
-              <img class="ml-5" src="assets/img/nav_images/garanty.png" alt="">
+              <img class="ml-2 ml-sm-5" src="assets/img/nav_images/garanty.png" alt="">
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@
 
     <section class="brick_types">
       <div class="container">
-        <h1 class="section_title text-center"><span>Декоративный камень</span> нашего производства</h1>
+        <h1 class="section_title text-center"><span>Декоративный камень</span> нашего <br> производства</h1>
         <p class="text-center brick_types-help">Кликайте на иконку <span>+</span> возле, каждого свойства, чтобы узнать почему</p>
         <div class="row">
           <div class="col-lg-4 text-center">
@@ -245,9 +245,9 @@
                 <fieldset>
                   <h2 class="form_title">Куда прислать цену?</h2>
                   <hr>
-                  <div class="form_socials-container">
+                  <div id="form1" class="form_socials-container">
                     <div class="form_social form_social-viber">
-                      <input type="radio" name="size" id="size_1" value="small">
+                      <input type="radio" name="size" id="size_1" checked value="Viber">
                       <label for="size_1">
                         <img src="assets/img/form_icons/viber_reverse.svg" alt="">
                         <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
@@ -255,7 +255,7 @@
                       </label>
                     </div>
                     <div class="form_social form_social-telegram">
-                      <input type="radio" name="size" id="size_2" value="small">
+                      <input type="radio" name="size" id="size_2" value="Telegram">
                       <label for="size_2">
                         <img src="assets/img/form_icons/telegram.svg" alt="">
                         <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
@@ -263,7 +263,7 @@
                       </label>
                     </div>
                     <div class="form_social form_social-whatsapp">
-                      <input type="radio" name="size" id="size_3" value="small">
+                      <input type="radio" name="size" id="size_3" value="WhatsApp">
                       <label for="size_3">
                         <img src="assets/img/form_icons/whatsapp.svg" alt="">
                         <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
@@ -271,12 +271,15 @@
                       </label>
                     </div>
                     <div class="form_social form_social-phone">
-                      <input type="radio" name="size" id="size_4" value="small">
+                      <input type="radio" name="size" id="size_4" value="звонок на телефон">
                       <label for="size_4">
                         <img src="assets/img/form_icons/tel_btn.svg" alt="">
                         <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
                         Позвоните мне
                       </label>
+                    </div>
+                    <div class="form_socials-choised">
+                      <p>Выбран <span>Viber</span></p>
                     </div>
                   </div>
                   <div class="form_tel-input-container">
@@ -376,38 +379,41 @@
               <fieldset>
                 <h2 class="form_title">Куда отправить каталог?</h2>
                 <hr>
-                <div class="form_socials-container">
+                <div id="form2" class="form_socials-container">
                   <div class="form_social form_social-viber">
-                    <input type="radio" name="size" id="size_1" value="small">
-                    <label for="size_1">
+                    <input type="radio" name="size" id="size_5" checked value="Viber">
+                    <label for="size_5">
                       <img src="assets/img/form_icons/viber_reverse.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
                       в Viber
                     </label>
                   </div>
                   <div class="form_social form_social-telegram">
-                    <input type="radio" name="size" id="size_2" value="small">
-                    <label for="size_2">
+                    <input type="radio" name="size" id="size_6" value="Telegram">
+                    <label for="size_6">
                       <img src="assets/img/form_icons/telegram.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
                       в Telegram
                     </label>
                   </div>
                   <div class="form_social form_social-whatsapp">
-                    <input type="radio" name="size" id="size_3" value="small">
-                    <label for="size_3">
+                    <input type="radio" name="size" id="size_7" value="WhatApp">
+                    <label for="size_7">
                       <img src="assets/img/form_icons/whatsapp.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
                       в Whatsapp
                     </label>
                   </div>
                   <div class="form_social form_social-phone">
-                    <input type="radio" name="size" id="size_4" value="small">
-                    <label for="size_4">
+                    <input type="radio" name="size" id="size_8" value="звонок на телефон">
+                    <label for="size_8">
                       <img src="assets/img/form_icons/tel_btn.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
                       Позвоните мне
                     </label>
+                  </div>
+                  <div class="form_socials-choised">
+                    <p>Выбран <span>Viber</span></p>
                   </div>
                 </div>
                 <div class="row mt-lg-4">
@@ -678,13 +684,13 @@
           <div class="col-lg-6 col-9 mx-auto">
             <div class="additional_container additional_sign-up-container">
               <h3>Запишитесь на экскурсию по нашим объектам</h3>
-              <a class="btn btn_primary btn_small" href="">Записаться</a>
+              <a class="btn btn_primary btn_small" data-toggle="modal" data-target="#consult3">Записаться</a>
             </div>
           </div>
           <div class="col-lg-6 col-9 mx-auto mt-4 mt-lg-0">
             <div class="additional_container additional_instagram-container">
               <h3>Больше наших работ, отзывов в инстаграме</h3>
-              <a href="">@domkamnya.by</a>
+              <a target="_blank" href="https://www.instagram.com/domkamnya.by/">@domkamnya.by</a>
               <span></span>
               <p>1177 подписчика</p>
             </div>
@@ -837,7 +843,7 @@
               <p class="ml-3">Вышлем вам полный каталог с ценами. <br> перед консультацией</p>
             </div>
             <div class="btn_border">
-              <a class="btn" href="">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+              <a class="btn"  data-toggle="modal" data-target="#consult2">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                 <p class="ml-4">Возможна выездная консультация</p>
             </div>
           </div>
@@ -898,38 +904,41 @@
               <fieldset>
                 <h2 class="form_title">Куда отправить каталог?</h2>
                 <hr>
-                <div class="form_socials-container">
+                <div id="form1" class="form_socials-container">
                   <div class="form_social form_social-viber">
-                    <input type="radio" name="size" id="size_1" value="small">
-                    <label for="size_1">
+                    <input type="radio" name="size" id="size_9" checked value="Viber">
+                    <label for="size_9">
                       <img src="assets/img/form_icons/viber_reverse.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
                       в Viber
                     </label>
                   </div>
                   <div class="form_social form_social-telegram">
-                    <input type="radio" name="size" id="size_2" value="small">
-                    <label for="size_2">
+                    <input type="radio" name="size" id="size_10" value="Telegram">
+                    <label for="size_10">
                       <img src="assets/img/form_icons/telegram.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
                       в Telegram
                     </label>
                   </div>
                   <div class="form_social form_social-whatsapp">
-                    <input type="radio" name="size" id="size_3" value="small">
-                    <label for="size_3">
+                    <input type="radio" name="size" id="size_11" value="WhatsApp">
+                    <label for="size_11">
                       <img src="assets/img/form_icons/whatsapp.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
                       в Whatsapp
                     </label>
                   </div>
                   <div class="form_social form_social-phone">
-                    <input type="radio" name="size" id="size_4" value="small">
-                    <label for="size_4">
+                    <input type="radio" name="size" id="size_12" value="звонок на телефон">
+                    <label for="size_12">
                       <img src="assets/img/form_icons/tel_btn.svg" alt="">
                       <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
                       Позвоните мне
                     </label>
+                  </div>
+                  <div class="form_socials-choised">
+                    <p>Выбран <span>Viber</span></p>
                   </div>
                 </div>
                 <div class="row mt-lg-4">
@@ -958,7 +967,7 @@
     
     <section class="take_kp">
       <div class="container text-center">
-        <h1 class="setion_title text-center">Вы занимаетесь дизайном интерьера, <br>
+        <h1 class="section_title text-center">Вы занимаетесь дизайном интерьера, <br>
           строите дома под ключ или делаете ремонт.</h1>
         <h5>Получите индивидуальное коммерческое предложение</h5>
         <div class="row">
@@ -1125,38 +1134,41 @@
                     <fieldset>
                       <h2 class="form_title">Куда прислать цену?</h2>
                       <hr>
-                      <div class="form_socials-container">
+                      <div id="form4" class="form_socials-container">
                         <div class="form_social form_social-viber">
-                          <input type="radio" name="size" id="size_1" value="small">
-                          <label for="size_1">
+                          <input type="radio" name="size" id="size_13" checked value="Viber">
+                          <label for="size_13">
                             <img src="assets/img/form_icons/viber_reverse.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
                             в Viber
                           </label>
                         </div>
                         <div class="form_social form_social-telegram">
-                          <input type="radio" name="size" id="size_2" value="small">
-                          <label for="size_2">
+                          <input type="radio" name="size" id="size_14" value="Telegram">
+                          <label for="size_14">
                             <img src="assets/img/form_icons/telegram.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
                             в Telegram
                           </label>
                         </div>
                         <div class="form_social form_social-whatsapp">
-                          <input type="radio" name="size" id="size_3" value="small">
-                          <label for="size_3">
+                          <input type="radio" name="size" id="size_15" value="WhatsApp">
+                          <label for="size_15">
                             <img src="assets/img/form_icons/whatsapp.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
                             в Whatsapp
                           </label>
                         </div>
                         <div class="form_social form_social-phone">
-                          <input type="radio" name="size" id="size_4" value="small">
-                          <label for="size_4">
+                          <input type="radio" name="size" id="size_16" value="звонок на телефон">
+                          <label for="size_16">
                             <img src="assets/img/form_icons/tel_btn.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
                             Позвоните мне
                           </label>
+                        </div>
+                        <div class="form_socials-choised">
+                          <p>Выбран <span>Viber</span></p>
                         </div>
                       </div>
                       <div class="form_tel-input-container">
@@ -1217,38 +1229,41 @@
                     <fieldset>
                       <h2 class="form_title">Куда прислать цену?</h2>
                       <hr>
-                      <div class="form_socials-container">
+                      <div id="form5" class="form_socials-container">
                         <div class="form_social form_social-viber">
-                          <input type="radio" name="size" id="size_1" value="small">
-                          <label for="size_1">
+                          <input type="radio" name="size" id="size_17" checked value="Viber">
+                          <label for="size_17">
                             <img src="assets/img/form_icons/viber_reverse.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
                             в Viber
                           </label>
                         </div>
                         <div class="form_social form_social-telegram">
-                          <input type="radio" name="size" id="size_2" value="small">
-                          <label for="size_2">
+                          <input type="radio" name="size" id="size_18" value="Telegram">
+                          <label for="size_18">
                             <img src="assets/img/form_icons/telegram.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
                             в Telegram
                           </label>
                         </div>
                         <div class="form_social form_social-whatsapp">
-                          <input type="radio" name="size" id="size_3" value="small">
-                          <label for="size_3">
+                          <input type="radio" name="size" id="size_19" value="WhatsApp">
+                          <label for="size_19">
                             <img src="assets/img/form_icons/whatsapp.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
                             в Whatsapp
                           </label>
                         </div>
                         <div class="form_social form_social-phone">
-                          <input type="radio" name="size" id="size_4" value="small">
-                          <label for="size_4">
+                          <input type="radio" name="size" id="size_20" value="звонок на телефон">
+                          <label for="size_20">
                             <img src="assets/img/form_icons/tel_btn.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
                             Позвоните мне
                           </label>
+                        </div>
+                        <div class="form_socials-choised">
+                          <p>Выбран <span>Viber</span></p>
                         </div>
                       </div>
                       <div class="form_tel-input-container">
@@ -1294,38 +1309,135 @@
                     <fieldset>
                       <h2 class="form_title">Оставьте телефон для связи</h2>
                       <hr>
-                      <div class="form_socials-container">
+                      <div id="form6" class="form_socials-container">
                         <div class="form_social form_social-viber">
-                          <input type="radio" name="size" id="size_1" value="small">
-                          <label for="size_1">
+                          <input type="radio" name="size" id="size_21" checked value="Viber">
+                          <label for="size_21">
                             <img src="assets/img/form_icons/viber_reverse.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
                             в Viber
                           </label>
                         </div>
                         <div class="form_social form_social-telegram">
-                          <input type="radio" name="size" id="size_2" value="small">
-                          <label for="size_2">
+                          <input type="radio" name="size" id="size_22" value="Telegram">
+                          <label for="size_22">
                             <img src="assets/img/form_icons/telegram.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
                             в Telegram
                           </label>
                         </div>
                         <div class="form_social form_social-whatsapp">
-                          <input type="radio" name="size" id="size_3" value="small">
-                          <label for="size_3">
+                          <input type="radio" name="size" id="size_23" value="WhatsApp">
+                          <label for="size_23">
                             <img src="assets/img/form_icons/whatsapp.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
                             в Whatsapp
                           </label>
                         </div>
                         <div class="form_social form_social-phone">
-                          <input type="radio" name="size" id="size_4" value="small">
-                          <label for="size_4">
+                          <input type="radio" name="size" id="size_24" value="звонок на телефон">
+                          <label for="size_24">
                             <img src="assets/img/form_icons/tel_btn.svg" alt="">
                             <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
                             Позвоните мне
                           </label>
+                        </div>
+                        <div class="form_socials-choised">
+                          <p>Выбран <span>Viber</span></p>
+                        </div>
+                      </div>
+                      <div class="form_tel-input-container">
+                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                      </div>
+                      <div class="time_choise"> 
+                        <label class="form_accept-container">
+                          <input onchange="document.getElementById('time_choise-input').style.display = 'none'" type="radio" checked="checked" name="time">
+                          <span class="checkmark"></span>
+                          <p>Перезвоните мне сейчас</span></p>
+                        </label>
+                        <label class="form_accept-container">
+                          <input onchange="document.getElementById('time_choise-input').style.display = 'block'" type="radio" id="time_choised" name="time">
+                          <span class="checkmark"></span>
+                          <p>Ко времени</span></p>
+                        </label>
+                      </div>
+                      <div id="time_choise-input" class="time_choise-input">
+                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="Когда Вам удобнее позвонить?">
+                      </div>
+                      <button class="btn btn-primary btn_small w-100">узнать цену</button>
+                      <div class=""> 
+                        <label class="form_accept-container">
+                          <input type="checkbox" checked="checked" name="checkbox">
+                          <span class="checkmark"></span>
+                          <p>Согласен с <span>Политикой конфиденциальности</span></p>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" id="consult3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-content modal_consultant-container">
+          <div class="modal_consultant">
+            <img src="assets/img/consultation/elena.png" alt="">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <h2 class="modal_title">Запишитесь на объекты</h2>
+                  <div class="modal_pluce-container">
+                    <p>Наш консультант перезвонит в удобное для Вас время и ответит на все интересующие вопросы</p>
+                  </div>
+                  <form>
+                    <fieldset>
+                      <h2 class="form_title">Оставьте телефон для связи</h2>
+                      <hr>
+                      <div id="form6" class="form_socials-container">
+                        <div class="form_social form_social-viber">
+                          <input type="radio" name="size" id="size_21" checked value="Viber">
+                          <label for="size_21">
+                            <img src="assets/img/form_icons/viber_reverse.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/viber.svg" alt="">
+                            в Viber
+                          </label>
+                        </div>
+                        <div class="form_social form_social-telegram">
+                          <input type="radio" name="size" id="size_22" value="Telegram">
+                          <label for="size_22">
+                            <img src="assets/img/form_icons/telegram.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/telegram_reverse.svg" alt="">
+                            в Telegram
+                          </label>
+                        </div>
+                        <div class="form_social form_social-whatsapp">
+                          <input type="radio" name="size" id="size_23" value="WhatsApp">
+                          <label for="size_23">
+                            <img src="assets/img/form_icons/whatsapp.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/whatsapp_reverse.svg" alt="">
+                            в Whatsapp
+                          </label>
+                        </div>
+                        <div class="form_social form_social-phone">
+                          <input type="radio" name="size" id="size_24" value="звонок на телефон">
+                          <label for="size_24">
+                            <img src="assets/img/form_icons/tel_btn.svg" alt="">
+                            <img class="form_social-hover-icon" src="assets/img/form_icons/tel_btn-reverse.svg" alt="">
+                            Позвоните мне
+                          </label>
+                        </div>
+                        <div class="form_socials-choised">
+                          <p>Выбран <span>Viber</span></p>
                         </div>
                       </div>
                       <div class="form_tel-input-container">

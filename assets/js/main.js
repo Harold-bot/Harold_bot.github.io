@@ -19,3 +19,39 @@ $('.questions_card').on('click', (e) => {
   }
 
 })
+
+$(function(){
+  $('#form1 .form_social input').change(function(){
+      $('#form1 .form_socials-choised span').html($(this).val());
+  });
+});
+
+$(function(){
+  $('#form2 .form_social input').change(function(){
+      $('#form2 .form_socials-choised span').html($(this).val());
+  });
+});
+
+$(function(){
+  $('#form3 .form_social input').change(function(){
+      $('#form3 .form_socials-choised span').html($(this).val());
+  });
+});
+
+$(function(){
+  $('#form4 .form_social input').change(function(){
+      $('#form4 .form_socials-choised span').html($(this).val());
+  });
+});
+
+$(function(){
+  $('#form5 .form_social input').change(function(){
+      $('#form5 .form_socials-choised span').html($(this).val());
+  });
+});
+
+$(function(){
+  $('#form6 .form_social input').change(function(){
+      $('#form6 .form_socials-choised span').html($(this).val());
+  });
+});

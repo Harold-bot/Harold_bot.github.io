@@ -55,3 +55,66 @@ $(function(){
       $('#form6 .form_socials-choised span').html($(this).val());
   });
 });
+
+let menuState = false;
+
+$('.menu_btn').click(function () {
+  menuState = !menuState;
+  if (menuState) {
+    $('.map_wrapper').animate({left: '0px'}, 500, function () {
+      $('.substrate').animate({opacity: '0.7'}, 200)
+    })
+  }
+})
+
+$('.map_close').click(function () {
+  menuState = !menuState;
+  if (!menuState) {
+    $('.substrate').animate({opacity: '0'}, 200, function () {
+      $('.map_wrapper').animate({left: '-3000px'}, 500)
+    })
+  }
+})
+
+$('.substrate').click(function () {
+  menuState = !menuState;
+  if (!menuState) {
+    $('.substrate').animate({opacity: '0'}, 200, function () {
+      $('.map_wrapper').animate({left: '-3000px'}, 500)
+    })
+  }
+})
+
+$('.map_item').click(function () {
+  menuState = !menuState;
+  if (!menuState) {
+    $('.substrate').animate({opacity: '0'}, 200, function () {
+      $('.map_wrapper').animate({left: '-3000px'}, 500)
+    })  
+  }
+})
+
+$('.popover_pluce-container').click(function () {
+  menuState = !menuState;
+  if (menuState) {
+    $(this).toggleClass('active')
+  } else {
+    $(this).removeClass('active')
+  }
+})
+
+$('#1').click(function () {
+  $('.services').css({'backgroundImage':'url(./assets/img/services/bg1.png)'});
+})
+
+$('#2').click(function () {
+  $('.services').css({'backgroundImage':'url(./assets/img/services/bg2.png)'});
+})
+
+$('#3').click(function () {
+  $('.services').css({'backgroundImage':'url(./assets/img/services/bg3.png)'});
+})
+
+$('#4').click(function () {
+  $('.services').css({'backgroundImage':'url(./assets/img/services/bg4.png)'});
+})

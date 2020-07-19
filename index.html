@@ -19,9 +19,36 @@
 
   </head>
   <body>
+
+
+
+
+    <nav class="map_wrapper row">
+      <div class="map row col-xl-4 col-lg-5 col-sm-6">
+        <div class="col-xl-2 col-1"></div>
+        <div class="col-xl-8 col-11 flex-column d-flex align-items-start">
+          <div class="row align-items-center">
+            <div class="map_close"></div>
+          </div>	
+          <h2 class="map_title">Меню</h2>
+          <div class="map_container flex-column d-flex align-items-start justify-content-start">
+            <a href="#wherefore" class="map_item">Конструктор камня</a>
+            <a href="#who" class="map_item">Шоу-рум</a>
+            <a href="#author" class="map_item">О камне</a>
+            <a href="#what" class="map_item">Доставка</a>
+            <a href="#why" class="map_item">О компании</a>
+            <a href="#reviews" class="map_item">Отзывы</a>
+            <a href="#program" class="map_item">Объекты</a>
+            <a href="#cost" class="map_item">Дизайнерам и архитекторам</a>
+          </div>	
+        </div>
+      </div>
+      <div class="substrate col-xl-8 col-lg-7 col-sm-6"></div>
+    </nav>
+
     <section class="main_s01">
       <div class="container">
-        <nav class="row">
+        <header class="row">
           <div class="col-lg-1 col-6 order-1 py-2 py-lg-0 d-flex align-items-center">
             <div class="menu_btn menu_btn-mobile">
               <div class="burger-wrapper">
@@ -65,7 +92,7 @@
               </div>
             </div>
           </div>
-        </nav>
+        </header>
         <div class="row">
           <div class="col-lg-7 main_s01-info">
             <h1 class="section_title">Декоративный камень для интерьера и фасада</h1>
@@ -79,16 +106,16 @@
                       <p>Без трещин, сколов и загрязнений.</p>
                     </div>
                     <div class="main_s01-pluce col-6">
-                      <img src="assets/img/nav_images/pluces_icons/1.svg" alt="">
-                      <p>Без трещин, сколов и загрязнений.</p>
+                      <img src="assets/img/nav_images/pluces_icons/2.svg" alt="">
+                      <p>Сохраняет цвет и <br> фактуру более 25 лет</p>
                     </div>
                     <div class="main_s01-pluce col-6">
-                      <img src="assets/img/nav_images/pluces_icons/1.svg" alt="">
-                      <p>Без трещин, сколов и загрязнений.</p>
+                      <img src="assets/img/nav_images/pluces_icons/3.svg" alt="">
+                      <p>Гарантия сроков <br> по договору.</p>
                     </div>
                     <div class="main_s01-pluce col-6">
-                      <img src="assets/img/nav_images/pluces_icons/1.svg" alt="">
-                      <p>Без трещин, сколов и загрязнений.</p>
+                      <img src="assets/img/nav_images/pluces_icons/4.svg" alt="">
+                      <p>Бесплатная доставка <br> по Минску.</p>
                     </div>
                   </div>
                 </div>
@@ -125,21 +152,21 @@
           <div class="col-lg-4 text-center">
             <a class="brick_types-btn" href="">
               <img src="assets/img/brick_types/icons/1.png" alt="">
-              <img class="brick_types-img-hover" src="" alt="">
+              <img class="brick_types-img-hover" src="assets/img/brick_types/icons/1-green.png" alt="">
               <p>Прочный и долговечный камень</p> 
             </a>
           </div>
           <div class="col-lg-4 text-center mt-3 mt-lg-0">
             <a class="brick_types-btn" href="">
               <img src="assets/img/brick_types/icons/2.png" alt="">
-              <img class="brick_types-img-hover" src="" alt="">
+              <img class="brick_types-img-hover" src="assets/img/brick_types/icons/2-green.png" alt="">
               <p>Прочный и долговечный камень</p> 
             </a>
           </div>
           <div class="col-lg-4 text-center mt-3 mt-lg-0">
             <a class="brick_types-btn" href="">
               <img src="assets/img/brick_types/icons/3.png" alt="">
-              <img class="brick_types-img-hover" src="" alt="">
+              <img class="brick_types-img-hover" src="assets/img/brick_types/icons/3-green.png" alt="">
               <p>Прочный и долговечный камень</p> 
             </a>
           </div>
@@ -283,7 +310,7 @@
                     </div>
                   </div>
                   <div class="form_tel-input-container">
-                    <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                    <input id="tel_input" class="w-100 tel_input" type="text" type="tel" placeholder="+375 (__) ___-__-__">
                   </div>
                   <button class="btn btn-primary btn_small w-100">узнать цену</button>
                   <div class=""> 
@@ -419,7 +446,7 @@
                 <div class="row mt-lg-4">
                   <div class="col-lg-6">
                     <div class="form_tel-input-container">
-                      <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                      <input id="tel_input1" class="w-100 tel_input" type="text" type="tel" placeholder="+375 (__) ___-__-__">
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -761,36 +788,47 @@
         <div class="row">
           <ul class="services_tabs-container nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#description"><span>1</span> Производство</a>
+              <a class="nav-link active" id="1" data-toggle="tab" href="#production_tab"><span>1</span> Производство</a>
             </li>
             <span class="betweener"></span>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#characteristics"><span>2</span>Шоурум</a>
+              <a class="nav-link" id="2" data-toggle="tab" href="#showroom_tab"><span>2</span>Шоурум</a>
             </li>
             <span class="betweener"></span>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#guarantee"><span>3</span>Доставка</a>
+              <a class="nav-link" id="3" data-toggle="tab" href="#delivery_tab"><span>3</span>Доставка</a>
             </li>
             <span class="betweener"></span>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#service"><span>4</span>Обслуживание</a>
+              <a class="nav-link" id="4" data-toggle="tab" href="#service_tab"><span>4</span>Обслуживание</a>
             </li>
           </ul>
-          <div class="tab-content services_content col-lg-4">
-            <div class="tab-pane fade show active" id="description">
+          <div class="tab-content services_content col-lg-7">
+            <div class="tab-pane fade show active" id="production_tab">
               <h2>Производство</h2>
               <p>5-20 дней в зависимости от объема и сложности заказа</p>
               <h6>Описание этапа, возможен вывод других регалий и фактов, возможен вывод иконками, производственного
                 этапа, ждём контента</h6>
+                <img style="right: -65%; top: 30%;" src="assets/img/services/1.png" alt="">
             </div>
-            <div class="tab-pane fade" id="characteristics">
-              <h2>Производсassssssтво</h2>
+            <div class="tab-pane fade" id="showroom_tab">
+              <h2>Камень попадает в шоурум</h2>
               <p>5-20 дней в зависимости от объема и сложности заказа</p>
-              <h6>Описание этапа, возможен вывод других регалий и фактов, возможен вывод иконками, производственного
-                этапа, ждём контента</h6>
+              <h6>В шоуруме вы его выбираете вам помогает менеджер, и тд.</h6>
+              <img style="right: -65%; top: 20%;" src="assets/img/services/1.png" alt="">
             </div>
-            <div class="tab-pane fade" id="opinion">
-              Отзывы...
+            <div class="tab-pane fade" id="delivery_tab">
+              <h2>Доставляем по всей РБ</h2>
+              <p>5-20 дней в зависимости от объема и сложности заказа</p>
+              <h6>Вы можете забрать со склада и тд. перед отправкой проверяем камень на повреждение помогаем с загрузкой</h6>
+              <img style="right: -50%; top: 60%;" src="assets/img/services/1.png" alt="">
+            </div>
+            <div class="tab-pane fade" id="service_tab">
+              <h2>Помогаем с монтажом, и уходом за камнем
+                </h2>
+              <p>Делаем то-то</p>
+              <h6>В шоуруме вы его выбираете вам помогает менеджер, и тд.</h6>
+              <img style="right: -50%; top: 45%;" src="assets/img/services/2.png" alt="">
             </div>
           </div>
         </div>
@@ -944,7 +982,7 @@
                 <div class="row mt-lg-4">
                   <div class="col-xl-6">
                     <div class="form_tel-input-container">
-                      <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                      <input id="tel_input6" class="tel_input w-100"  type="text" type="tel" placeholder="+375 (__) ___-__-__">
                     </div>
                   </div>
                   <div class="col-xl-6">
@@ -1172,7 +1210,7 @@
                         </div>
                       </div>
                       <div class="form_tel-input-container">
-                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                        <input id="tel_input2" class="w-100 tel_input" type="text" type="tel" placeholder="+375 (__) ___-__-__">
                       </div>
                       <button class="btn btn-primary btn_small w-100">узнать цену</button>
                       <div class=""> 
@@ -1267,7 +1305,7 @@
                         </div>
                       </div>
                       <div class="form_tel-input-container">
-                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                        <input id="tel_input3" class="w-100 tel_input" type="text" type="tel" placeholder="+375 (__) ___-__-__">
                       </div>
                       <button class="btn btn-primary btn_small w-100">узнать цену</button>
                       <div class=""> 
@@ -1347,7 +1385,7 @@
                         </div>
                       </div>
                       <div class="form_tel-input-container">
-                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                        <input id="tel_input4" class="w-100 tel_input" type="text" type="tel" placeholder="+375 (__) ___-__-__">
                       </div>
                       <div class="time_choise"> 
                         <label class="form_accept-container">
@@ -1362,7 +1400,7 @@
                         </label>
                       </div>
                       <div id="time_choise-input" class="time_choise-input">
-                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="Когда Вам удобнее позвонить?">
+                        <input  class="w-100 tel_input" type="text" type="tel" placeholder="Когда Вам удобнее позвонить?">
                       </div>
                       <button class="btn btn-primary btn_small w-100">узнать цену</button>
                       <div class=""> 
@@ -1441,7 +1479,7 @@
                         </div>
                       </div>
                       <div class="form_tel-input-container">
-                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="1241212">
+                        <input id="tel_input5" class="w-100 tel_input" type="text" type="tel" placeholder="+375 (__) ___-__-__">
                       </div>
                       <div class="time_choise"> 
                         <label class="form_accept-container">
@@ -1456,7 +1494,7 @@
                         </label>
                       </div>
                       <div id="time_choise-input" class="time_choise-input">
-                        <input id="tel_input" class="w-100" type="text" type="tel" placeholder="Когда Вам удобнее позвонить?">
+                        <input class="w-100 tel_input" type="text" type="tel" placeholder="Когда Вам удобнее позвонить?">
                       </div>
                       <button class="btn btn-primary btn_small w-100">узнать цену</button>
                       <div class=""> 
@@ -1717,6 +1755,14 @@
         centerMode: false,
         focusOnSelect: true
       });
+
+      $("#tel_input").mask("+375 (99) 999-99-99");
+      $("#tel_input1").mask("+375 (99) 999-99-99");
+      $("#tel_input2").mask("+375 (99) 999-99-99");
+      $("#tel_input3").mask("+375 (99) 999-99-99");
+      $("#tel_input4").mask("+375 (99) 999-99-99");
+      $("#tel_input5").mask("+375 (99) 999-99-99");
+      $("#tel_input6").mask("+375 (99) 999-99-99");
     </script>
 
   </body>

@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 a, a:active, a:visited {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 a:hover {
@@ -209,6 +210,8 @@ section {
   color: #fff!important;
   border: none;
   background: linear-gradient(180deg, #95C09A 0%, #618765 100%);
+  position: relative;
+  z-index: 10;
 }
 
 .btn-primary {
@@ -1807,19 +1810,58 @@ footer {
 }
 
 .footer_contact-text-container {
-  margin-left: 30px;
+  margin-left: 32px;
 }
  
 .footer_contact-text-container p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.5;
+  display: block;
 }
 
-.footer_contact-text-container p:nth-child(1) {
+.footer_modal-link {
+  color: #BDA468!important;
+  opacity: 1;
+  border-bottom: 1px dotted #BDA468;
+}
+
+.footer_contact-text-container p:nth-child(1), .footer_contact-text-container > a:nth-child(1) {
   opacity: 1;
   margin-top: 21px;
   margin-bottom: 9px;
+  color: #fff;
+  display: block;
+}
+
+.footer_tel {
+  margin-top: 21px;
+  margin-bottom: 9px;
+}
+
+.footer_tel a {
+  color: #fff;
+  opacity: 1;
+  font-size: 12px;
+}
+
+.footer_tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_tel div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_tel div a {
+  margin-left: 10px;
+}
+
+.footer_contact-text-container a {
+
 }
 
 .footer_slide-img-container {
@@ -2266,6 +2308,66 @@ color: #C7A576;
   box-shadow: 0px 4px 8px #C7A576;
 }
 
+.messenger_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.messenger_link p {
+  font-size: 12px;
+  color: #000;
+  max-width: 111px;
+  margin-right: 20px;
+}
+
+.messenger_link-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 100px;
+  padding: 8px 11px 9px;
+}
+
+.messenger_link-container span {
+  height: 24px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.modal .btn-primary p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7px;
+}
+
+.modal_item-container .modal-body::before {
+  content: '';
+  width: 398px;
+  height: 406.77px;
+  background: #FBF9F7;
+  position: absolute;
+  left: -10%;
+  top: calc(50% - 200px);
+  border-radius: 50%;
+}
+
+.modal_item-container h4 {
+  font-family: Neumann;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-align: center;
+}
+
+.modal_item-container .modal_title {
+  margin-bottom: 50px;
+}
+
 /* media STYLES */
 @media screen and (max-width: 1830px) {
   .work_price::after, .catalog_brick-light::before, .work_price::before {
@@ -2457,7 +2559,8 @@ color: #C7A576;
   }
 
   .form_accept-container p {
-    margin-left: 10px;
+    margin-left: 7px;
+    padding-top: 3px;
   }
 
   .section_title {
@@ -2708,6 +2811,18 @@ color: #C7A576;
     padding-bottom: 20px;
   }
 
+  .footer_contact-container {
+    padding: 10px;
+  }
+
+  .footer_contact-text-container p, .footer_contact-text-container a {
+    font-size: 10px;
+  }
+
+  .footer_modal-link {
+    font-size: 12px;
+  }
+
   .footer_contact-title-container h4 {
     font-size: 16px;
   }
@@ -2905,6 +3020,10 @@ color: #C7A576;
     margin-bottom: 0;
   }
 
+  .footer_contact-text-container p, .footer_contact-text-container a {
+    font-size: 13px;
+  }
+
   .footer_map {
     margin-top: 30px;
   }
@@ -2993,6 +3112,20 @@ color: #C7A576;
 
   .modal_slider .slick-prev {
     left: 7px;
+  }
+
+  .modal_item-container img {
+    max-height: 220px;
+  }
+
+  .modal_item-container .modal-body::before {
+    top: -20%;
+    left: calc(50% - 200px);
+  }
+  
+  .modal_item-container .modal_title {
+    margin-top: 35px;
+    margin-bottom: 50px;
   }
 
 }
@@ -3259,7 +3392,7 @@ color: #C7A576;
   }
 
   .footer_contact-container {
-    padding: 10px 12px 5px;
+    padding: 10px 12px;
   }
 
   .footer_contact-title-container h4 {
@@ -3403,6 +3536,7 @@ color: #C7A576;
 @media screen and (max-width: 375px) {
   .form_social label, .work_price .form_social label {
     width: auto;
+    padding: 10px 7px!important;
   }
 
   .form_social-viber {
@@ -3464,6 +3598,18 @@ color: #C7A576;
   .take_kp p {
     font-size: 12px;
   }
+
+  .messenger_link p {
+    font-size: 10px;
+  }
+
+  form .btn {
+    padding: 10px 15px!important;
+  }
+
+  .modal_item-container img {
+    max-height: 140px;
+  } 
 
 }
 

@@ -676,6 +676,28 @@ form hr {
   position: relative;
 }
 
+.sticky_nav .main_s01-logo-bg::before {
+  content: '';
+  display: none;
+}
+
+.sticky_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #25252C;
+  z-index: 999;
+  transition: all ease-in-out 0.5s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fixed {
+  position: absolute;
+  top: -109px;
+  box-shadow: none;
+}
+
 .main_s01-logo-bg::before {
   content: url('../img/nav_images/logo_border.svg');
   position: absolute;
@@ -2368,6 +2390,44 @@ color: #C7A576;
   margin-bottom: 50px;
 }
 
+.modal_teammate-container .modal-body::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(226.74deg, #43424B 37.23%, #63626D 83.74%);
+  width: 696px;
+  height: 696px;
+  border-radius: 50%;
+  left: -40%;
+  bottom: -50%;
+}
+
+.modal_teammate-container h6 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.modal_teammate-container p {
+  color: #25252B;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.modal_teammate {
+  position: absolute;
+  bottom: 0;
+  z-index: 8;
+}
+
+.modal_teammate-container .socials_container {
+  display: flex;
+  margin-top: 70px;
+}
+
+.modal_teammate-container .socials_container a {
+  margin-right: 20px;
+}
+
 /* media STYLES */
 @media screen and (max-width: 1830px) {
   .work_price::after, .catalog_brick-light::before, .work_price::before {
@@ -2878,10 +2938,24 @@ color: #C7A576;
     padding: 0 2px;
   }
 
+  .modal_teammate {
+    bottom: -8%;
+    left: -4%;
+  }
+
+  .modal_teammate img {
+    transform: scale(0.8);
+  }
+
 }
 
 
 @media screen and (max-width: 992px) {
+  .sticky_nav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   section, .services {
     padding: 50px 0;
   }
@@ -3126,6 +3200,18 @@ color: #C7A576;
   .modal_item-container .modal_title {
     margin-top: 35px;
     margin-bottom: 50px;
+  }
+
+  .modal_teammate img {
+    display: none;
+  }
+
+  .modal_teammate-container .modal_title {
+    margin-top: 40px;
+  }
+ 
+  .modal_teammate-container .modal-body::before {
+    display: none;
   }
 
 }
@@ -3530,6 +3616,10 @@ color: #C7A576;
   .not_stone .slick-prev {
     left: calc(50% - 76px);
   } 
+
+  .modal_teammate-container p {
+    margin-top: 25px;
+  }
   
 }
 

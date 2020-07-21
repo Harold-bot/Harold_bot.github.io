@@ -118,3 +118,15 @@ $('#3').click(function () {
 $('#4').click(function () {
   $('.services').css({'backgroundImage':'url(./assets/img/services/bg4.png)'});
 })
+
+$(window).scroll(function(){
+	scroll = $(window).scrollTop();
+	if (scroll >= 108) {
+		$('.sticky_nav').removeClass('fixed');
+
+	}
+	else {
+		$('.sticky_nav').addClass('fixed');
+
+	}
+});

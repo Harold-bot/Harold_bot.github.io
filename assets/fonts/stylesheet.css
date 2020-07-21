@@ -9,6 +9,15 @@
 
 @font-face {
     font-family: 'Geometria';
+    src: url('Geometria-Light.woff');
+    src: local('Geometria Light'), local('Geometria-Light'),
+        url('Geometria-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
     src: url('Geometria-Bold.woff');
     src: local('Geometria Medium'), local('Geometria-Medium'),
         url('Geometria-Medium.woff') format('woff');

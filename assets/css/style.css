@@ -941,6 +941,11 @@ form hr {
   margin: 0 27px;
 }
 
+.slick-dots {
+  max-width: 300px;
+  left: calc(50% - 150px);
+}
+
 .catalog_brick-slide-info-container {
   padding: 20px 30px 25px;
   color: #fff;
@@ -2209,6 +2214,10 @@ color: #C7A576;
   z-index: 9;
 }
 
+.modal_slider .slick-next {
+  right: -40px;
+}
+
 .modal_slider .slick-arrow::before {
   width: 50px;
   height: 50px;
@@ -2225,12 +2234,16 @@ color: #C7A576;
   margin-top: -30px;
 }
 
+.modal_cases-slide {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
 .modal_cases-slides img {
   border: 1px solid #969696;
   border-radius: 10px;
-  cursor: pointer;
-  margin: 0 auto;
-  height: 60px;
+  width: 100%;
+  height: 50px;
   margin-bottom: 10px;
 }
 
@@ -2708,6 +2721,33 @@ color: #C7A576;
   .footer_bot p span {
     margin-left: 30px;
   }
+
+  .modal_pluces-border h4 {
+    margin-bottom: 20px;
+  }
+
+  .modal_pluces-border::before {
+    width: 310px;
+    height: 310px;
+    left: -33%;
+  }
+
+  .modal_book img {
+    transform: scale(0.8);
+  }
+
+  .modal_case-title + .modal_title {
+    font-size: 28px;
+  }
+
+  .modal_cases-slides img {
+    height: 45px;
+  }
+
+  .modal_cases-slide {
+    padding: 0 2px;
+  }
+
 }
 
 
@@ -2731,6 +2771,11 @@ color: #C7A576;
   .main_s01-pluce {
     justify-content: start;
     padding: 16px 0;
+  }
+
+  .burger-wrapper div {
+    left: unset;
+    right: 0;
   }
 
   .brick_types br {
@@ -2869,6 +2914,72 @@ color: #C7A576;
     margin-left: 0;
   }
 
+  .modal-body {
+    padding: 32px 34px;
+  }
+
+  .modal form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal_title {
+    margin-top: 190px;
+  }
+
+  .modal_consultant-container .modal_title {
+    margin-top: 120px;
+  }
+
+  .modal_book {
+    transform: scale(0.6);
+    top: -5%;
+    right: -18%;
+  }
+
+  .modal_book-container .modal-body::before {
+    width: 710px;
+    top: -35%;
+    right: -28%;
+  } 
+
+  .modal_consultant-container .modal-body::before {
+    width: 710px;
+    top: -51%;
+    left: -15%;
+  }
+
+  .modal_pluces-border::before {
+    display: none;
+  }
+
+  .modal_consultant {
+    display: none;
+  }
+
+  .modal_slider {
+    width: 100%;
+    margin: auto;
+  }
+
+  .modal_case .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  } 
+
+  .modal_cases-slides img {
+    height: 55px;
+  }
+
+  .modal_slider .slick-next {
+    right: -10px;
+  }
+
+  .modal_slider .slick-prev {
+    left: 7px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -2920,8 +3031,16 @@ color: #C7A576;
 }
 
 @media screen and (max-width: 576px) {
+  .section_title {
+    line-height: unset;
+  }
+
   .show_room-slider-container {
     display: none;
+  }
+
+  .number_container-call-order {
+    line-height: unset;
   }
 
   .footer_slider .slick-prev {
@@ -2934,16 +3053,86 @@ color: #C7A576;
 }
 
 @media screen and (max-width: 475px) {
+  .form_tel-input-container::after {
+    top: 10px;
+    left: 13px;
+  }
+
+  .checkmark {
+    transform: scale(0.8);
+  }
+
+  form fieldset, .catalog_brick-light fieldset, .catalog_brick fieldset {
+    padding: 15px 20px;
+  }
+
+  .form_accept-container p, .catalog_brick-light .form_accept-container p, .catalog_brick  .form_accept-container p {
+    font-size: 8px;
+    margin-left: 0;
+  }
+
+  .catalog_brick .tel_input, .catalog_brick-light .tel_input, .tel_input {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  .main_s01-logo-container img {
+    max-height: 28px;
+  }
+
+  .main_s01 .btn-primary {
+    max-width: 210px;
+    padding: 18px 15px 13px;
+  }
+
+  .btn_container img {
+    max-height: 70px;
+  }
+
+  .number_container-call {
+    font-size: 11px;
+  }
+
+  .burger-wrapper div {
+    height: 1px;
+  }
+
+  .burger-1 {
+    width: 12px;
+  }
+
+  .burger-2 {
+    width: 18px;
+  }
+
+  .burger-3 {
+    width: 23px;
+  }
+
   form {
     width: auto;
   } 
 
   .section_title, .main_s01-info .section_title, .catalog_brick .section_title, .pluces .section_title, .modal_case-title + .modal_title {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .main_s01-info h4 {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .main_s01-pluce {
+    display: block;
+    padding: 16px 4px 16px 0;
+  }
+
+  .main_s01-pluce p {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .main_s01-partners {
+    margin-top: 25px;
   }
 
   .brick_types-info-container h2 {
@@ -2952,6 +3141,18 @@ color: #C7A576;
 
   .show_room .section_title br {
     display: none;
+  }
+
+  .pluce_container {
+    align-items: flex-start;
+  }
+
+  .pluce_container-text h6 {
+    font-size: 14px;
+  }
+
+  .pluce_container-text p {
+    font-size: 12px;
   }
 
   .additional_container {
@@ -2990,10 +3191,158 @@ color: #C7A576;
   .footer_slider .slick-next, .footer_slider .slick-prev {
     top: 265px;
   }
+
+  .modal-body {
+    padding: 22px 20px;
+  }
+
+  .modal_title {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .modal_pluce-container {
+    margin: 30px 0;
+  }
+
+  .modal_pluce-container p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .modal .form_social label {
+    width: auto;
+  }
+
+  .modal .form_social-viber {
+    order: -2;
+  }
+
+  .modal .form_social-phone {
+    order: -1;
+  }
+
+  .modal_consultant-container .modal-body::before {
+    top: -78%;
+    left: -29%;
+  }
+
+  .modal_consultant-container .modal_title {
+    margin-top: 80px;
+  }
+
+  .modal_consultant-container .modal-body {
+    padding-bottom: 20px;
+  }
+
+  .modal_cases-slides img {
+    height: 40px;
+  }
+
+  .modal_slider .slick-arrow::before {
+    transform: scale(0.6);
+  }
+
+  .modal_slider .slick-next {
+    right: -15px;
+  }
+
+  .modal_slider .slick-prev::before {
+    transform: scale(0.6) rotate(180deg);
+  }
+
+  .modal_slider .slick-prev {
+    left: -6px;
+  }
+
+  .modal_case-title + .modal_title {
+    margin-bottom: 28px;
+    font-size: 22px;
+  }
+
+  .material_container img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .material_info {
+    margin-left: 18px;
+  }
+
+  .material_info-container {
+    flex-wrap: wrap;
+  }
+
+  .material_info-container h6 {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .material_container p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .question_price-container p {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+
+  .question_price-container h4 {
+    font-size: 18px;
+  }
+  
 }
 
 @media screen and (max-width: 375px) {
+  .form_social label, .work_price .form_social label {
+    width: auto;
+  }
 
+  .form_social-viber {
+    order: -2;
+  }
+
+  .form_social-phone {
+    order: -1;
+  }
+
+  .footer_slider .slick-next, .footer_slider .slick-prev {
+    top: 65%;
+  }
+
+  .footer_slider .slick-prev {
+    left: 72%;
+  }
+
+  .footer_slider .slick-arrow::before {
+    transform: scale(0.8);
+  }
+
+  .footer_slider .slick-prev::before {
+    transform: scale(0.8) rotate(180deg);
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal_book-container .modal-body::before {
+    top: -40%;
+    left: -25%;
+  }
+
+  .modal_book {
+    left: 10%;
+  }
+
+  .modal_book img {
+    transform: scale(0.6);
+  }
+
+  .modal_book::before {
+    transform: scale(0.7);
+  }
 }
 
 @media (min-width: 1200px){

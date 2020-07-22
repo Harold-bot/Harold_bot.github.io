@@ -119,6 +119,8 @@ $('#4').click(function () {
   $('.services').css({'backgroundImage':'url(./assets/img/services/bg4.png)'});
 })
 
+var $root = $('html, body');
+
 $(window).scroll(function(){
 	scroll = $(window).scrollTop();
 	if (scroll >= 108) {
@@ -129,4 +131,12 @@ $(window).scroll(function(){
 		$('.sticky_nav').addClass('fixed');
 
 	}
+});
+
+$('a[href^="#"]').click(function () {
+  $root.animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 200
+  }, 500);
+
+  return false;
 });

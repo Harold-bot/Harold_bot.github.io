@@ -140,3 +140,21 @@ $('a[href^="#"]').click(function () {
 
   return false;
 });
+
+$('form').submit(function(event) {
+  event.preventDefault();
+  form_data = $(this).serialize();
+  console.log(form_data);
+  $('.modal').modal('hide');
+   $.ajax({
+        url: 'mailer/send.php', // point to server-side PHP script 
+        contentType: false,
+        processData: false,
+        data: form_data,                         
+        type: 'post',
+        success: function(php_script_response){
+        //   formElement.find('.submit-btn').removeAttr('disabled');
+          $('#submit').modal('show');
+        }
+     })
+});

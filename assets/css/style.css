@@ -3682,6 +3682,23 @@ margin-top: 20px;
   .modal_teammate-container p {
     margin-top: 25px;
   }
+
+  .map .number_container-call {
+    font-size: 16px;
+  }
+
+  .map .row {
+    margin-bottom: 0;
+  }
+
+  .map_title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .map_item {
+    font-size: 14px;
+  }
   
 }
 

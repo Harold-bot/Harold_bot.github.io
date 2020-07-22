@@ -34,8 +34,8 @@
     <nav class="map_wrapper row">
       <div class="map row col-xl-4 col-lg-5 col-sm-6">
         <div class="col-xl-2 col-1"></div>
-        <div class="col-xl-8 col-11 flex-column d-flex align-items-start">
-          <div class="row align-items-center">
+        <div class="col-xl-8 col-10 flex-column d-flex align-items-start">
+          <div class="row align-items-start">
             <div class="map_close"></div>
           </div>	
           <h2 class="map_title">Меню</h2>
@@ -48,6 +48,21 @@
             <a href="#reviews" class="map_item">Отзывы</a>
             <a href="#cases" class="map_item">Объекты</a>
             <a href="#for_designers" class="map_item">Дизайнерам и архитекторам</a>
+            <div class="number_container d-flex d-lg-none text-left justify-content-start mt-3">
+              <div class="number_container-tel justify-content-start">
+                <a class="number_container-call" href="">+375 44 530-10-10</a>
+                <a class="number_container-call-order d-none d-lg-inline" data-toggle="modal" data-target="#consult1">Заказать обратный звонок</a>
+                <a class="number_container-call-order d-inline d-lg-none" data-toggle="modal" data-target="#consult1">Заказать звонок</a>
+              </div>
+              <div class="d-flex justify-content-start number_container-socials">
+                <a href="">
+                  <img src="assets/img/nav_images/whatsapp_icon.svg" alt="">
+                </a>
+                <a class="ml-2" href="">
+                  <img src="assets/img/nav_images/tg_icon.svg" alt="">
+                </a>
+              </div>
+            </div>
           </div>	
         </div>
       </div>
